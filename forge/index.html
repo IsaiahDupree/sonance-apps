@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>A developer&#x27;s Swiss-army knife that lives in your menu bar. Format JSON, encode Base64 and URLs, hash text, generate UUIDs, decode JWTs, and convert timestamps — instantly, without pasting sensitive data into some random website.<br><br>GREAT FOR<br>• Pretty-printing and validating a blob of JSON in a second<br>• Decoding a JWT to check its claims (Pro)<br>• Generating a UUID or hashing a string on the spot<br>• Converting a Unix timestamp to a readable date (Pro)<br><br>Everything runs locally and offline — nothing you paste is ever sent anywhere.<br><br>TOOLS<br>• JSON format &amp; minify<br>• Base64 encode/decode, URL encode/decode<br>• UUID generator<br>• SHA-256 &amp; MD5 hashing (Pro)<br>• JWT decode — header + payload (Pro)<br>• Epoch time converter (Pro)<br><br>Free: JSON, Base64, URL, UUID. Pro (one-time purchase): hashing, JWT, epoch.<br><br>Private by design — your data never leaves your Mac.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Click the menu-bar icon and pick a tool tab (JSON, Base64, …).</li><li>Paste or type your input.</li><li>The result appears instantly — copy it out. Everything stays on your Mac.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>JSON, Base64, URL, UUID</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>SHA-256 &amp; MD5 hashing</li><li>JWT decode</li><li>Epoch converter</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>Is my data sent to a server?</h3><p>No. Everything runs locally and offline — nothing you paste ever leaves your Mac.</p></div><div class="faq"><h3>Which tools are free?</h3><p>JSON format, Base64, URL encode/decode, and UUID. Hashing, JWT decode, and epoch conversion are Pro.</p></div><div class="faq"><h3>Does it work without internet?</h3><p>Yes, entirely offline.</p></div>
   <div class="contact">

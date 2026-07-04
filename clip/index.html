@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>Your clipboard, with a memory. Everything you copy is kept, searchable, and one hotkey away — so you never lose something you copied ten minutes (or ten copies) ago.<br><br>GREAT FOR<br>• Getting back text you copied over by accident<br>• Pasting from several things you copied earlier, in any order<br>• Keeping snippets, links, and addresses you reuse all day<br>• Searching your copy history instead of hunting for it again<br><br>Lightweight, native, and private: your history stays on your Mac, and you can keep password managers out of it automatically.<br><br>FEATURES<br>• Automatic clipboard history — text, links, and images<br>• Instant search across everything you&#x27;ve copied<br>• Your last 20 items (free)<br>• Unlimited history + pinned favorites (Pro)<br><br>Free: last 20 + search. Pro (one-time purchase): unlimited history + pins.<br><br>Stays entirely on your device.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Copy anything as usual — Clip records it automatically.</li><li>Press ⌘⇧V or click the menu-bar icon to open your history.</li><li>Click an item to copy it again; pin the ones you reuse.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Last 20 items</li><li>Instant search</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>Unlimited history</li><li>Pinned favorites</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>How do I open my history?</h3><p>Press the hotkey (⌘⇧V) or click the menu-bar icon, then click any item to copy it again.</p></div><div class="faq"><h3>How much history is kept?</h3><p>The last 20 items are free; unlimited history and pinned favorites are Pro.</p></div><div class="faq"><h3>Is my clipboard private?</h3><p>Yes — history stays on your Mac. You can exclude password managers automatically.</p></div>
   <div class="contact">

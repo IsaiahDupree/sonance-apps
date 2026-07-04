@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>Record the audio your Mac is playing — the whole system or a single app — straight to a clean file. No cables, no loopback driver, no “Stereo Mix” hacks.<br><br>GREAT FOR<br>• Saving a podcast, interview, or webinar as it plays<br>• Capturing a video call for notes (with everyone&#x27;s consent)<br>• Grabbing audio from a stream, game, or app that has no download<br>• Ripping just one app&#x27;s sound while everything else keeps playing<br><br>Your audio keeps playing normally through your speakers while Sonance Recorder writes a pristine copy in the background. Built on Core Audio process taps (macOS 14.4+) — driverless and reboot-free.<br><br>FEATURES<br>• Record the whole system to lossless WAV (free)<br>• Record a single chosen app in isolation (Pro)<br>• Space-saving Apple Lossless &amp; AAC formats (Pro)<br>• One-click record from the menu bar + reveal in Finder<br><br>Free: whole-system WAV. Pro (one-time purchase): per-app capture + compact formats.<br><br>Everything is processed on your Mac and never leaves it.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Open the menu-bar icon and choose a source (whole system or one app).</li><li>Click record — your audio keeps playing normally.</li><li>Click stop, then Reveal in Finder to find your file.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Whole-system recording to lossless WAV</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>Per-app capture</li><li>Apple Lossless &amp; AAC formats</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>Where are my recordings saved?</h3><p>To the folder you choose; use “Reveal in Finder” from the menu bar after a recording.</p></div><div class="faq"><h3>Can I record just one app?</h3><p>Yes — single-app capture is a Pro feature. Free records the whole system to lossless WAV.</p></div><div class="faq"><h3>Does audio keep playing while I record?</h3><p>Yes. Your audio plays normally while a clean copy is written in the background.</p></div>
   <div class="contact">

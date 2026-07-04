@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>Your Mac&#x27;s vital signs, always in the menu bar — and the power to act on them. See what&#x27;s slowing you down and stop it on the spot.<br><br>GREAT FOR<br>• Spotting what&#x27;s spiking your CPU or draining your battery<br>• Force-quitting a hung or runaway app in one click — free<br>• Keeping an eye on memory and network at a glance<br>• A clean, native alternative to a heavyweight monitor<br><br>CPU, memory, network up/down, battery, and disk in a live readout, with the full panel one click away. The top-processes list and the ability to Quit or Force Quit any process are completely free.<br><br>FEATURES<br>• Live CPU, memory, network, battery, and disk<br>• Top processes — see what&#x27;s eating your CPU<br>• Stop any process — Quit or Force Quit, free<br>• A live stat right in the menu bar<br>• Choose which stat shows in the bar (Pro)<br><br>Free: full panel, top processes, and stopping processes. Pro (one-time purchase): pick which stat rides in your menu bar.<br><br>Efficient, unobtrusive, and always on.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Open the menu-bar panel to see live CPU, memory, network, and disk.</li><li>Scroll to Top Processes to see what&#x27;s busy.</li><li>Click the ✕ next to a process to Quit or Force Quit it — free.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Full stats panel</li><li>Top processes</li><li>Quit / Force Quit any process</li><li>CPU in the menu bar</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>Choose which stat shows in the menu bar</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>How do I stop a process?</h3><p>Open the panel, find the process in Top Processes, and choose Quit or Force Quit. This is free.</p></div><div class="faq"><h3>What&#x27;s the Pro feature?</h3><p>Choosing which stat (CPU, memory, network, battery) rides in your menu bar. The full panel and stopping processes are free.</p></div><div class="faq"><h3>Does it slow my Mac down?</h3><p>No — it samples lightweightly and stays out of the way.</p></div>
   <div class="contact">

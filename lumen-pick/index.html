@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>Grab the exact color of any pixel on your screen. Press a hotkey, use the magnifier loupe, and the color is instantly on your clipboard — as HEX, RGB, HSL, or ready-to-paste code.<br><br>GREAT FOR<br>• Matching a color from any app, site, or image<br>• Copying a HEX value straight into your design tool<br>• Pasting a SwiftUI Color or NSColor line right into code (Pro)<br>• Checking text contrast for accessibility<br><br>Uses the native macOS eyedropper, so it needs no special permissions and lands on the exact pixel every time.<br><br>FEATURES<br>• System eyedropper with a magnifier loupe<br>• HEX / RGB / CSS + WCAG contrast ratio (free)<br>• SwiftUI / NSColor / HSL code formats (Pro)<br>• Palette history of everything you&#x27;ve picked (Pro)<br><br>Free: pick + HEX/RGB/CSS. Pro (one-time purchase): code formats + palette history.<br><br>For designers and developers who live in color.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Press the hotkey (Option-Command-P) to start the eyedropper.</li><li>Move the loupe over the exact pixel and click.</li><li>The color is copied — choose HEX, RGB, or code from the panel.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Pick + HEX / RGB / CSS</li><li>WCAG contrast ratio</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>SwiftUI / NSColor / HSL code</li><li>Palette history</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>How accurate is the pick?</h3><p>It uses the native macOS eyedropper with a magnifier loupe, so it lands on the exact pixel.</p></div><div class="faq"><h3>Can I get SwiftUI or NSColor code?</h3><p>Yes — code formats and palette history are Pro. Free copies HEX, RGB, and CSS.</p></div><div class="faq"><h3>Does it need special permissions?</h3><p>No. It uses the system color picker, which requires no extra permissions.</p></div>
   <div class="contact">

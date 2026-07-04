@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>macOS still has no built-in per-app volume control. Sonance Mixer adds it — a menu-bar mixer with a separate volume slider and mute for every app currently playing sound.<br><br>GREAT FOR<br>• Turning a loud game down without touching your Discord call<br>• Keeping background music quiet while you&#x27;re on Zoom<br>• Instantly muting one noisy browser tab or app — not everything<br>• Sending a movie to your speakers while notifications stay on your headphones (Pro)<br><br>No driver, no kernel extension, no reboot. Sonance Mixer uses Core Audio process taps (macOS 14.4+), so it installs like any normal app and adjusts every level live, with no clicks or glitches.<br><br>FEATURES<br>• Independent volume + mute for every app playing audio<br>• Per-app output routing (Pro) — send different apps to different devices<br>• Driverless and lightweight — lives quietly in your menu bar<br>• Smooth, real-time changes with no zipper noise<br><br>Free: volume + mute for every app. Pro (one-time purchase): per-app output routing.<br><br>Your audio is processed live on your Mac and never leaves it.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Click the menu-bar icon to open the mixer.</li><li>Play audio in any app — it appears with its own slider.</li><li>Drag a slider to set that app&#x27;s volume, or click the speaker to mute.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Volume + mute for every app</li><li>Driverless, live</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>Per-app output routing (send apps to different devices)</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>An app isn&#x27;t showing in the list.</h3><p>Only apps currently playing audio appear. Start playback and it will show up with its own slider.</p></div><div class="faq"><h3>Can I send different apps to different speakers?</h3><p>Yes — per-app output routing is a Pro feature. Free includes independent volume and mute for every app.</p></div><div class="faq"><h3>Do I need a driver?</h3><p>No. It&#x27;s driverless via Core Audio process taps (macOS 14.4+).</p></div>
   <div class="contact">

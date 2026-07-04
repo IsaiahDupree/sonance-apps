@@ -30,6 +30,18 @@ ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .app .n{font-weight:800;color:#1c1c22;font-size:18px}
 .app .t{color:#5b5d66;font-size:14px;margin-top:4px}
 .faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:10px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:5px 0}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
 .contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
 .contact a{color:#8bd3ff}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
@@ -45,6 +57,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2>About</h2>
   <div class="card"><p>Tile your windows instantly. Click a layout or press a keyboard shortcut and the focused window snaps to a half, quarter, or third of the screen — a clean, fast, native window manager in your menu bar.<br><br>GREAT FOR<br>• Two apps side by side without dragging and resizing<br>• A tidy three-column layout for research or coding<br>• Instantly maximizing or centering the front window<br>• Arranging your desktop entirely from the keyboard<br><br>FEATURES<br>• Left/right/top/bottom halves, maximize, and center (free)<br>• Control-Option + arrow-key shortcuts<br>• Quarters and thirds for dense side-by-side layouts (Pro)<br>• A visual layout picker in the menu bar<br><br>Free: halves + maximize + center. Pro (one-time purchase): quarters + thirds.<br><br>Uses the macOS Accessibility API to move windows — nothing leaves your Mac.</p></div>
+  <h2>Getting started</h2><ol class="steps"><li>Grant Accessibility permission so Snap can move windows.</li><li>Click a layout in the menu-bar panel, or use Control-Option + arrow keys.</li><li>The focused window snaps into place instantly.</li></ol>
+  <h2>Free &amp; Pro</h2><p>Every app is free to use. Pro is a one-time purchase — no subscription.</p><div class="prices"><div class="price free"><div class="pt">Free</div><ul><li>Halves, maximize, center</li><li>Keyboard shortcuts</li></ul></div><div class="price pro"><div class="pt">Pro · one-time</div><ul><li>Quarters</li><li>Thirds</li></ul></div></div>
   <h2>Frequently asked questions</h2>
   <div class="faq"><h3>It won&#x27;t move my windows.</h3><p>SnapZones needs Accessibility permission to move other apps&#x27; windows. Grant it in System Settings ▸ Privacy &amp; Security ▸ Accessibility.</p></div><div class="faq"><h3>What are the keyboard shortcuts?</h3><p>Control-Option + arrow keys snap the focused window to halves, plus maximize and center.</p></div><div class="faq"><h3>What&#x27;s Pro?</h3><p>Quarters and thirds. Halves, maximize, and center are free.</p></div>
   <div class="contact">
