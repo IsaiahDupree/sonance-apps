@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relay — Support</title>
+<style>
+:root{--accent:#7dd3fc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#1c1c22;background:#fafbfc;line-height:1.6}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.hero{background:linear-gradient(150deg,#2563eb,#0b0f1a);color:#fff;padding:64px 24px 72px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hero .wrap{padding:0 24px}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.hero p{font-size:20px;color:rgba(255,255,255,.94);margin-top:14px;max-width:620px}
+.nav{margin-top:26px;display:flex;gap:18px;flex-wrap:wrap}
+.nav a{color:#fff;opacity:.85;font-weight:600;font-size:15px}
+main{padding:48px 0 80px}
+h2{font-size:26px;font-weight:800;letter-spacing:-.01em;margin:38px 0 14px}
+h3{font-size:19px;font-weight:700;margin:26px 0 6px}
+p,li{font-size:17px;color:#33343a}
+ul{margin:10px 0 10px 22px}li{margin:6px 0}
+.card{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:22px 24px;margin:14px 0;
+  box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:10px 0 10px 46px;border-top:1px solid #eceef2}
+ol.steps li:first-child{border-top:none}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:20px 22px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:16px;margin-bottom:6px}
+.price .pp{color:#5b5d66;font-size:14px}
+@media(max-width:640px){.prices{grid-template-columns:1fr}}
+.contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
+.contact a{color:#8bd3ff}
+footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
+</style></head><body>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">Relay for iPhone, iPad &amp; Mac</div>
+  <h1>One calm feed for every signal.</h1>
+  <p>Point Relay at your own hub — webhooks, RSS/JSON feeds, and HTTP checks — and it routes every new signal into a single live feed. Filter by importance, get notified only for what matters, and keep the noise out.</p>
+  <div class="nav"><a href="#about">About</a><a href="#start">Getting started</a><a href="#pro">Relay Pro</a><a href="#faq">FAQ</a><a href="https://isaiahdupree.github.io/sonance-apps/relay/privacy/">Privacy</a></div>
+</div></div>
+<main><div class="wrap">
+  <h2 id="about">About</h2>
+  <div class="card"><p>Relay is a client for a Relay hub — a small service you run yourself that aggregates webhooks, RSS/JSON feeds, and HTTP checks into one signal stream. The app connects to the hub you point it at and shows every signal in a live, filterable feed, with an Overview dashboard and a one-tap integrations catalog.<br><br>Just want to look around? Turn on <strong>Demo mode</strong> (offered on first launch, and in Settings &rarr; Demo) to explore the whole app with realistic sample data — no hub required.<br><br>FREE<br>&bull; Connect up to 2 sources<br>&bull; Live feed with filtering and an Overview dashboard<br>&bull; Local notifications for new signals<br><br>PRO<br>&bull; Unlimited sources<br>&bull; Notification rules by importance level<br>&bull; Every theme<br><br>Relay talks only to the hub you point it at — no third-party accounts, no tracking.</p></div>
+
+  <h2 id="start">Getting started</h2>
+  <ol class="steps">
+    <li>Run a Relay hub, or open the Relay app on your Mac to get a hub URL and pairing code.</li>
+    <li>On first launch, enter your hub&rsquo;s URL to create an account, scan the desktop pairing QR, or paste a relay key by hand.</li>
+    <li>New signals stream into the Feed in real time. Filter by level, mute noisy sources, and mark items seen.</li>
+    <li>No hub yet? Tap <strong>Try the demo</strong> to explore every screen with sample data.</li>
+  </ol>
+
+  <h2 id="pro">Relay Pro</h2>
+  <p>Relay Pro is an optional auto-renewing subscription (or a one-time Lifetime unlock). Prices are shown in the app in your local currency and may vary by region; typical US pricing:</p>
+  <div class="prices">
+    <div class="price"><div class="pt">Monthly</div><div class="pp">Billed monthly, auto-renews</div></div>
+    <div class="price pro"><div class="pt">Annual</div><div class="pp">Billed yearly, auto-renews</div></div>
+    <div class="price"><div class="pt">Lifetime</div><div class="pp">One-time purchase</div></div>
+  </div>
+  <p style="margin-top:12px">Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; manage or cancel anytime in the App Store. Purchases are handled by Apple. See the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a> and our <a href="https://isaiahdupree.github.io/sonance-apps/relay/privacy/">Privacy Policy</a>.</p>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq"><h3>Do I need a server to try Relay?</h3><p>No. Turn on Demo mode to explore the full app with sample data. To receive your own signals you connect the app to a Relay hub you run.</p></div>
+  <div class="faq"><h3>&ldquo;Create account&rdquo; showed an error — what happened?</h3><p>Creating an account reaches out to your hub, so it needs a valid, reachable hub URL. If you don&rsquo;t have a hub yet, use Demo mode instead — no connection required.</p></div>
+  <div class="faq"><h3>Is my data private?</h3><p>Yes. Relay has no analytics or tracking, and it talks only to the hub you point it at. See the <a href="https://isaiahdupree.github.io/sonance-apps/relay/privacy/">Privacy Policy</a>.</p></div>
+  <div class="contact">
+    <h3 style="color:#fff;margin-top:0">Need a hand?</h3>
+    <p style="color:#c7cbd4">Email me directly and I&rsquo;ll help you out — usually within a day.</p>
+    <p style="margin-top:10px"><a href="mailto:isaiahdupree33@gmail.com?subject=Relay%20support">isaiahdupree33@gmail.com</a></p>
+  </div>
+</div></main>
+<footer><div class="wrap">© 2026 Isaiah Dupree. · <a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a> · <a href="https://isaiahdupree.github.io/sonance-apps/relay/privacy/">Privacy</a></div></footer>
+</body></html>
