@@ -81,9 +81,11 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
   <h2>Data we collect</h2>
-  <div class="card"><p><strong>None.</strong> We do not operate servers that receive your content, and we do not
+  <div class="card"><p><strong>None for the Mac utilities above.</strong> We do not operate servers that receive your content, and we do not
   use analytics or tracking SDKs. Apps that are still in evaluation run their purchase flow locally with no
-  network activity at all.</p></div>
+  network activity at all. <strong>vrdesk</strong> is the one connected app in this collection — it offers optional
+  Sign in with Apple and a subscription; exactly what that involves, and what it never touches, is described in
+  <a href="#vrdesk">vrdesk — Quest headset, iPhone, and Mac</a> below.</p></div>
 
   <h2>Permissions you may be asked for</h2>
   <ul>
@@ -93,8 +95,79 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   </ul>
   <p>These permissions are granted by you in System Settings and can be revoked at any time.</p>
 
+  <h2 id="vrdesk">vrdesk — Quest headset, iPhone, and Mac</h2>
+  <div class="card"><p>vrdesk streams your Mac's desktop to a Meta Quest headset so you can work in VR, with an
+  optional iPhone acting as an extra display. It has more moving parts than the single-purpose Mac utilities above, so
+  its data practices are spelled out here in full. The controller of any personal data described in this section is
+  <strong>Dupree Ops LLC</strong>. You can reach us at
+  <a href="mailto:isaiahdupree33@gmail.com">isaiahdupree33@gmail.com</a>.</p></div>
+
+  <h3>How vrdesk is built — everything stays on your local network</h3>
+  <p>vrdesk connects your Mac and your headset <strong>directly, peer-to-peer, over your own Wi-Fi or LAN</strong>.
+  The Mac host announces itself on the network with a discovery beacon; the headset finds it and completes a
+  <strong>6-digit pairing</strong>; the desktop is then encoded as H.264 video and sent to the headset over WebRTC.
+  There is <strong>no cloud server, no relay, and no analytics</strong> in this path. Your screen, keystrokes, mouse
+  movements, and audio travel device-to-device on your network and reach only the headset you paired with — they
+  never reach us.</p>
+
+  <h3>What vrdesk collects — and what it never touches</h3>
+  <p>vrdesk <strong>never collects, stores, or transmits to us</strong> any of the following: the contents of your
+  screen, the windows or documents you have open, your keystrokes, your mouse input, audio, your files, or your
+  browsing. There are no analytics, tracking, or advertising SDKs in vrdesk.</p>
+  <p>The <strong>only</strong> personal data vrdesk involves is what's needed to remember a purchase across your own
+  devices:</p>
+  <ul>
+    <li><strong>Sign in with Apple</strong> — a stable, Apple-provided user identifier, used as your account key so a Pro unlock follows you across your own devices.</li>
+    <li><strong>Subscription status</strong> — whether your Pro subscription is active, provided through RevenueCat. This is status only; we never receive your payment details.</li>
+  </ul>
+  <p>We file vrdesk's App Store privacy label as <em>Data Not Collected</em> because none of the above is linked to
+  you for advertising or tracking and none of your content is gathered — but we describe Sign in with Apple and
+  subscription status here so you have the complete picture regardless of how the label reads.</p>
+
+  <h3>Sign in with Apple</h3>
+  <p>Signing in is optional and exists for one reason: to give you a stable account identifier so that a Pro purchase
+  made in the iPhone app also unlocks on your Mac. We receive the identifier Apple issues (and, if you choose Apple's
+  private email relay, a relay address rather than your real email). You can revoke this at any time in
+  <strong>iOS Settings → your name → Sign-In &amp; Security → Sign in with Apple</strong>, which severs the link.</p>
+
+  <h3>Purchases &amp; subscriptions (RevenueCat)</h3>
+  <p>vrdesk Pro is an optional auto-renewing subscription sold in the iPhone app and handled by <strong>Apple</strong>
+  through the App Store. To validate the subscription and unlock Pro across your devices we use
+  <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, which receives an identifier and your
+  <strong>subscription status only</strong> — never your name, payment card, or the content you use vrdesk with.
+  Apple handles all payment information; we never see it. See also
+  <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+  <h3>Permissions by device</h3>
+  <ul>
+    <li><strong>Mac</strong> — <em>Screen Recording</em> (required by macOS to capture your desktop for streaming) and <em>Accessibility</em> (to inject keyboard and mouse input coming from the headset).</li>
+    <li><strong>iPhone</strong> — <em>Local Network</em> (to find your Mac and headset on the LAN), <em>screen capture / ReplayKit</em> (only if you use the phone as an extra display), and <em>Sign in with Apple</em>.</li>
+    <li><strong>Quest headset</strong> — <em>Bluetooth / BLE-HID</em> (so the headset can act as a keyboard and mouse to a paired phone) and <em>local network access</em> (to receive the Mac's video stream).</li>
+  </ul>
+  <p>Every one of these is granted by you and can be revoked at any time in that device's system settings.</p>
+
+  <h3>Third parties we rely on</h3>
+  <p>vrdesk uses a small number of sub-processors, each for a single narrow purpose:</p>
+  <ul>
+    <li><strong>Apple</strong> — Sign in with Apple, and App Store payment processing.</li>
+    <li><strong>RevenueCat</strong> — subscription status, so Pro unlocks across your devices.</li>
+    <li><strong>Meta / Horizon</strong> — an entitlement check to confirm you own the vrdesk headset app on the store.</li>
+  </ul>
+  <p>There are no advertising or analytics providers.</p>
+
+  <h3>Retention &amp; deletion</h3>
+  <p>We run no servers that hold your usage, so there is nothing about your sessions for us to retain or delete on our
+  side. Any local data — pairing information and preferences — is removed when you <strong>delete the app</strong> on
+  each device. To sever the account link, revoke Sign in with Apple in iOS Settings; to end billing, cancel the
+  subscription in the App Store.</p>
+
+  <h3>Security</h3>
+  <p>A stream only starts after you enter your Mac's <strong>6-digit pairing code</strong> in the headset, and it
+  flows peer-to-peer on your own network. Your Mac will not stream to a headset that hasn't completed pairing.</p>
+
   <h2>Children</h2>
-  <p>These apps are not directed at children and do not knowingly collect any information from anyone.</p>
+  <p>These apps, including vrdesk, are not directed to children under 13 and do not knowingly collect any information
+  from children.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be posted here with a new date.</p>

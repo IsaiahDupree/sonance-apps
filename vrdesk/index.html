@@ -1,0 +1,176 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vrdesk — Your Mac desktop in VR on Quest 3</title>
+<meta name="description" content="vrdesk streams your Mac's screens to a Quest 3 over your own Wi-Fi — peer-to-peer, no cloud, no relay. Download the notarized Mac app.">
+<style>
+:root{--accent:#5cc8ff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#1c1c22;background:#fafbfc;line-height:1.6}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.hero{position:relative;overflow:hidden;background:linear-gradient(150deg,#123a7a,#070a1f);color:#fff;padding:64px 24px 72px}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(58% 52% at 82% 6%,rgba(92,200,255,.30),transparent 70%)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hero .wrap{position:relative;z-index:1;padding:0 24px}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+.hero p{font-size:20px;color:rgba(255,255,255,.94);margin-top:16px;max-width:640px}
+.hero-cta{margin-top:26px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.nav{margin-top:28px;display:flex;gap:18px;flex-wrap:wrap}
+.nav a{color:#fff;opacity:.85;font-weight:600;font-size:15px}
+main{padding:48px 0 80px}
+h2{font-size:26px;font-weight:800;letter-spacing:-.01em;margin:38px 0 14px}
+h3{font-size:19px;font-weight:700;margin:26px 0 6px}
+p,li{font-size:17px;color:#33343a}
+ul{margin:10px 0 10px 22px}li{margin:6px 0}
+.lead{font-size:18px;color:#4a4c55}
+.card{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:22px 24px;margin:14px 0;
+  box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.card h3:first-child{margin-top:0}
+.btn{display:inline-block;background:var(--accent);color:#08131a;font-weight:700;padding:12px 22px;
+  border-radius:10px;margin-top:2px}.btn:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-lg{font-size:18px;padding:16px 30px;border-radius:12px;box-shadow:0 8px 22px rgba(92,200,255,.28)}
+.btn.secondary{background:#fff;color:#0f3a6b;border:1px solid #cfe3f5;box-shadow:none}
+.btn.secondary:hover{filter:none;background:#f4f9ff}
+.trust{font-size:14px;color:rgba(255,255,255,.72);font-weight:500}
+.dl{display:flex;flex-direction:column;align-items:flex-start;gap:14px;background:linear-gradient(160deg,#f3f9ff,#ffffff);border-color:#dcebfa}
+.dl .sub{font-size:15px;color:#5b5d66}
+.storebtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.reqs li{margin:8px 0}
+.reqs strong{color:#1c1c22}
+.faq{border-top:1px solid #eceef2;padding-top:16px;margin-top:8px}
+ol.steps{margin:10px 0 10px 4px;padding:0;counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:12px 0 12px 46px;border-top:1px solid #eceef2;font-size:17px;color:#33343a}
+ol.steps li:first-child{border-top:none}
+ol.steps li strong{color:#1c1c22}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;
+  border-radius:50%;background:var(--accent);color:#08131a;font-weight:800;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.price{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:22px 24px}
+.price.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.price .pt{font-weight:800;font-size:17px;margin-bottom:4px}
+.price .pp{font-size:14px;color:#5b5d66;margin-bottom:12px}
+.price ul{margin:0 0 0 18px}.price li{font-size:15px;margin:6px 0}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#0f3a6b;background:#e3f2ff;border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:middle}
+@media(max-width:640px){.prices{grid-template-columns:1fr}.hero h1{font-size:34px}}
+.contact{background:#0f172a;color:#e6e9ef;border-radius:16px;padding:26px 28px;margin-top:32px}
+.contact a{color:#8bd3ff}
+footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
+footer a{color:#6b7280}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">vrdesk · Mac desktop in VR</div>
+  <h1>Turn your Mac into an infinite VR workspace on Quest 3.</h1>
+  <p>vrdesk streams your Mac's screens straight to your Quest 3 over your own Wi-Fi — a peer-to-peer H.264 link with no cloud server, no relay, and nothing to sign up for. Put your desktop on a wall-sized display, stack more monitors than your desk could hold, and keep typing on your real keyboard.</p>
+  <div class="hero-cta">
+    <a class="btn btn-lg" href="https://github.com/IsaiahDupree/vrdesk/releases/latest/download/vrdesk-0.9.0.dmg">Download vrdesk for Mac (.dmg)</a>
+    <div class="trust">Version 0.9.0 · Apple-notarized · Developer ID signed · macOS 14 Sonoma or later</div>
+  </div>
+  <div class="nav"><a href="#download">Download</a><a href="#setup">Set up</a><a href="#permissions">Permissions</a><a href="#faq">Troubleshooting</a><a href="#pricing">Pricing</a><a href="https://isaiahdupree.github.io/sonance-apps/privacy/">Privacy</a><a href="mailto:isaiahdupree33@gmail.com?subject=vrdesk%20support">Support</a></div>
+</div></div>
+<main><div class="wrap">
+
+  <h2 id="download">Download the Mac host</h2>
+  <p class="lead">The Mac app is the host — it captures your desktop and streams it to your headset. It ships as a signed, Apple-notarized disk image you download directly here, not from the Mac App Store.</p>
+  <div class="dl card">
+    <a class="btn btn-lg" href="https://github.com/IsaiahDupree/vrdesk/releases/latest/download/vrdesk-0.9.0.dmg">Download vrdesk 0.9.0 for Mac (.dmg)</a>
+    <div class="sub">Apple-notarized · Developer ID signed · Apple Silicon &amp; Intel · about 8&nbsp;MB</div>
+  </div>
+
+  <h2>What you also need</h2>
+  <div class="card">
+    <ul>
+      <li><strong>A Meta Quest 3 or Quest 3S</strong> running the free <strong>vrdesk headset app</strong> — this is what draws your Mac's screens around you in VR.</li>
+      <li><strong>Optional: your iPhone as a satellite display.</strong> The vrdesk iPhone app turns your phone into an extra floating screen next to your Mac's monitors.</li>
+      <li><strong>One local network.</strong> Your Mac, headset, and iPhone all need to be on the same Wi-Fi (or wired LAN). Everything streams device-to-device on that network — nothing routes through the internet.</li>
+    </ul>
+    <div class="storebtns">
+      <!-- TODO: confirm final Meta Horizon Store listing URL for the vrdesk headset app -->
+      <a class="btn secondary" href="https://www.meta.com/experiences/">Get the Quest app (Meta Horizon Store)</a>
+      <!-- TODO: confirm final App Store listing URL for the vrdesk iPhone satellite app -->
+      <a class="btn secondary" href="https://apps.apple.com/">Get the iPhone satellite (App Store)</a>
+    </div>
+  </div>
+
+  <h2 id="req">System requirements</h2>
+  <div class="card"><ul class="reqs">
+    <li><strong>macOS 14 Sonoma or later.</strong> vrdesk uses ScreenCaptureKit and modern capture APIs.</li>
+    <li><strong>Apple Silicon or Intel Mac.</strong> Apple Silicon encodes the video stream most efficiently, but Intel works too.</li>
+    <li><strong>Meta Quest 3 or Quest 3S</strong> on the same local network as your Mac.</li>
+    <li><strong>For the smoothest video, put your Mac on Ethernet.</strong> Wi-Fi-to-Wi-Fi can choke the stream; a wired Mac with the headset on Wi-Fi is the reliable setup.</li>
+  </ul></div>
+
+  <h2 id="setup">Install &amp; set up</h2>
+  <ol class="steps">
+    <li>Open the downloaded <strong>vrdesk-0.9.0.dmg</strong>.</li>
+    <li>Drag <strong>vrdesk</strong> into your <strong>Applications</strong> folder.</li>
+    <li>Launch <strong>vrdesk</strong> from Applications (first launch: right-click the app and choose <strong>Open</strong>).</li>
+    <li>When onboarding asks, grant <strong>Screen Recording</strong> so vrdesk can capture your desktop to stream.</li>
+    <li>Grant <strong>Accessibility</strong> so your headset can drive your Mac's keyboard and mouse.</li>
+    <li>Read the <strong>6-digit pairing code</strong> from the vrdesk icon in your menu bar — you'll type it into the headset.</li>
+  </ol>
+
+  <h2 id="permissions">The two permissions macOS will ask for</h2>
+  <div class="card">
+    <h3>Screen Recording</h3>
+    <p>macOS requires this before any app can read screen pixels. vrdesk uses it to capture your desktop and encode it into the video stream your headset displays. Without it, your headset shows a black screen.</p>
+  </div>
+  <div class="card">
+    <h3>Accessibility</h3>
+    <p>This lets vrdesk inject keyboard and mouse input, so a controller, tracked hand, or Bluetooth keyboard in the headset can actually click and type on your Mac. Without it, the view works but stays read-only.</p>
+  </div>
+  <p>Both are granted by you in <strong>System Settings → Privacy &amp; Security</strong>, and you can revoke either one at any time. The captured screen and injected input only ever travel to the headset you paired with, over your local network — never to us, and never to any server. On macOS 15 Sequoia, Apple re-asks for Screen Recording approval periodically; if your stream goes black after an update, re-approve vrdesk in System Settings and relaunch.</p>
+
+  <h2 id="pair">Pair with your headset</h2>
+  <div class="card"><p>Put on your Quest, open the vrdesk headset app, and it will discover your Mac on the network automatically. When it asks, enter the <strong>6-digit code</strong> shown in your Mac's menu bar. That code is what gates the connection — your Mac only starts streaming to a headset that entered the right code.</p></div>
+
+  <h2 id="faq">Troubleshooting</h2>
+  <div class="faq"><h3>macOS won't let me open the app</h3><p>The app is signed and notarized, but on first launch Gatekeeper can still be cautious. Right-click (or Control-click) vrdesk in Applications and choose <strong>Open</strong>, then confirm once. You won't be asked again.</p></div>
+  <div class="faq"><h3>The video stalls or freezes after the first frame</h3><p>This is almost always Wi-Fi-to-Wi-Fi congestion. Put your <strong>Mac on Ethernet</strong> and keep the headset on Wi-Fi — the wired link clears it up. Staying on the 5&nbsp;GHz band and close to the router also helps.</p></div>
+  <div class="faq"><h3>I can see my desktop but the keyboard and mouse do nothing</h3><p>Grant <strong>Accessibility</strong> to vrdesk in System Settings → Privacy &amp; Security → Accessibility, then relaunch. That permission is what lets the headset control your Mac.</p></div>
+  <div class="faq"><h3>How do I get updates?</h3><p>For this version, updates are a manual re-download — grab the latest .dmg from this page and drag the new app over the old one. Your settings are preserved.</p></div>
+  <div class="faq"><h3>Where does my screen go — is it private?</h3><p>Your screen never leaves your local network. vrdesk connects your Mac and headset peer-to-peer with WebRTC; there is no cloud server, no relay, and no analytics. See the <a href="https://isaiahdupree.github.io/sonance-apps/privacy/#vrdesk">privacy policy</a> for the full detail.</p></div>
+
+  <h2 id="pricing">Free &amp; Pro</h2>
+  <p class="lead">The Mac host is a free download. Pro is an optional upgrade you buy in the vrdesk iPhone app; because your unlock is tied to your Apple account, it lights up automatically on your Mac too.</p>
+  <div class="prices">
+    <div class="price">
+      <div class="pt">Free</div>
+      <div class="pp">Everything you need to get working in VR.</div>
+      <ul>
+        <li>One Mac monitor in the headset, at full 4K</li>
+        <li>One iPhone satellite display</li>
+        <li>Peer-to-peer streaming on your own network</li>
+        <li>Keyboard &amp; mouse control from the headset</li>
+      </ul>
+    </div>
+    <div class="price pro">
+      <div class="pt">Pro <span class="tag">In the iPhone app</span></div>
+      <div class="pp">For a full multi-screen spatial desk.</div>
+      <ul>
+        <li>Unlimited Mac monitors around you</li>
+        <li>Unlimited iPhone satellite displays</li>
+        <li>Saved layouts you can switch between</li>
+        <li>Unlocks on your Mac via your Apple account</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h3 style="color:#fff;margin-top:0">Need a hand?</h3>
+    <p style="color:#c7cbd4">Email me directly and I'll help you get set up — usually within a day.</p>
+    <p style="margin-top:10px"><a href="mailto:isaiahdupree33@gmail.com?subject=vrdesk%20support">isaiahdupree33@gmail.com</a></p>
+  </div>
+</div></main>
+<footer><div class="wrap">
+  vrdesk 0.9.0 · <a href="https://isaiahdupree.github.io/sonance-apps/privacy/#vrdesk">Privacy</a> ·
+  <!-- TODO: replace with a first-party Terms page when published; Apple standard EULA applies to the iPhone app -->
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a> ·
+  <a href="mailto:isaiahdupree33@gmail.com?subject=vrdesk%20support">Support</a><br>
+  © 2026 Dupree Ops LLC. All rights reserved.
+</div></footer>
+</body></html>
