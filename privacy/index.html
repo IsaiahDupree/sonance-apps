@@ -66,7 +66,7 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
     <li><strong>Sonance Voice</strong> processes microphone audio locally in real time.</li>
     <li><strong>Lumen Grab</strong> performs text recognition (OCR) on-device using Apple's Vision framework; captured images are not stored or sent anywhere.</li>
     <li><strong>Lumen Pick</strong> reads a pixel color you point at.</li>
-    <li><strong>Clip</strong> stores your clipboard history locally on your Mac; you can exclude sensitive sources such as password managers.</li>
+    <li><strong>Clip Contract</strong> stores the primary clipboard content needed to reproduce a copy-and-paste issue, plus a local contract snapshot containing pasteboard type identifiers, byte counts, SHA-256 equality digests, item count, and source-app metadata. It does not retain raw secondary representation payloads. Captures and baselines stay on the Mac, and content-free diagnostic reports omit clipboard values and equality digests.</li>
     <li><strong>Menu Vitals</strong> reads system statistics and the process list locally.</li>
     <li><strong>SnapZones</strong> uses the macOS Accessibility API to move windows; it reads nothing about their contents.</li>
     <li><strong>DevForge</strong> transforms text you enter entirely offline.</li>
@@ -74,10 +74,10 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 
   <h2>Purchases</h2>
   <p>Some apps offer an optional one-time “Pro” purchase. Purchases are handled by <strong>Apple</strong> through
-  the App Store. To validate and remember your purchase across your devices, we use
+  the App Store. Clip Contract validates its Pro entitlement directly with Apple's StoreKit. Some other apps use
   <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, a purchase-management service that receives an
-  anonymous identifier and basic device information — never your name, email, or the content you use the app
-  with. We do not receive your payment details; Apple handles all payment information. See also
+  anonymous identifier and basic device information — never the content you use the app with. We do not receive
+  your payment details; Apple handles all payment information. See also
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
   <h2>Data we collect</h2>
