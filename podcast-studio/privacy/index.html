@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Podcast Studio privacy policy, including account, media, transcript, AI processing, retention, and deletion details.">
 <title>Podcast Studio — Privacy Policy</title>
@@ -16,7 +16,7 @@ main{padding:48px 0 80px}h2{font-size:26px;font-weight:800;letter-spacing:-.01em
 p,li{font-size:17px;color:#33343a}ul{margin:10px 0 10px 22px}li{margin:6px 0}
 .card{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:22px 24px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .data{width:100%;border-collapse:collapse;margin:14px 0 4px;background:#fff}.data th,.data td{text-align:left;vertical-align:top;padding:14px;border:1px solid #e5e7eb;font-size:15px}.data th{background:#fff7ed;color:#572a07}.table-wrap{overflow-x:auto}
-.contact{background:#24150c;color:#f4e9df;border-radius:16px;padding:26px 28px;margin-top:32px}.contact a{color:#ffc47f}.contact p{color:#ddcfc2}
+.contact{background:#24150c;color:#f4e9df;border-radius:16px;padding:26px 28px;margin-top:32px}.contact h3{color:#fff;margin-top:0}.contact a{color:#ffc47f}.contact p{color:#ddcfc2}
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
 </style></head><body>
 <div class="hero"><div class="wrap">
@@ -27,13 +27,14 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
-  <div class="card"><p>Podcast Studio is a <strong>cloud-connected service</strong>. It uses your email address to provide an account, stores the recordings and project content you choose to upload, sends media to OpenAI for transcription, and sends transcript text to OpenAI to generate episode and social content. It does not contain advertising or analytics SDKs and does not use your information for cross-app tracking.</p></div>
+  <div class="card"><p>Podcast Studio is a <strong>cloud-connected service</strong>. It uses your email address to provide an account, stores the recordings and project content you choose to upload, sends media to OpenAI for transcription, and sends transcript text to OpenAI to generate episode and social content. Supabase also retains authentication and service-log metadata, including the request IP address, for account security and service operation. Podcast Studio does not contain advertising or analytics SDKs and does not use your information for cross-app tracking.</p></div>
 
   <h2>Information processed</h2>
   <div class="table-wrap"><table class="data">
     <thead><tr><th scope="col">Information</th><th scope="col">Why it is processed</th></tr></thead>
     <tbody>
       <tr><td><strong>Account information</strong><br>Email address, Supabase user identifier, and authentication session</td><td>Send one-time sign-in codes, authenticate you, keep you signed in, and associate episodes with your workspace.</td></tr>
+      <tr><td><strong>Authentication and service logs</strong><br>Account identifier, request IP address, user agent, timestamp, and request metadata</td><td>Authenticate requests, apply security and abuse-prevention controls, investigate failures, and operate the service. An IP address can imply coarse location. Podcast Studio does not request GPS or precise location.</td></tr>
       <tr><td><strong>Uploaded media and episode details</strong><br>Audio or video files, source filename, episode title, file path, processing status, duration, and detected language</td><td>Upload, store, identify, process, and display each episode.</td></tr>
       <tr><td><strong>Transcripts and edits</strong><br>Full transcript text, timestamped segments, and whether a segment is cut or restored</td><td>Create an editable transcript and synchronize the choices you make in the episode workspace.</td></tr>
       <tr><td><strong>Generated content</strong><br>Suggested titles, descriptions, show notes, chapters, hashtags, X threads, LinkedIn posts, and Instagram or TikTok captions</td><td>Provide the AI-assisted content tools you request and make the results available in your workspace.</td></tr>
@@ -53,14 +54,14 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <h2>Service providers</h2>
   <p>The following processors receive information only as needed to operate Podcast Studio:</p>
   <ul>
-    <li><strong>Supabase</strong> provides authentication, database storage, and media storage. See <a href="https://supabase.com/privacy">Supabase&rsquo;s Privacy Policy</a>.</li>
+    <li><strong>Supabase</strong> provides authentication, database storage, media storage, and service logging. Supabase authentication logs automatically associate an account event with request metadata such as IP address and user agent; log retention depends on the service plan. See <a href="https://supabase.com/privacy">Supabase&rsquo;s Privacy Policy</a> and <a href="https://supabase.com/docs/guides/auth/audit-logs">Auth Audit Logs documentation</a>.</li>
     <li><strong>Vercel</strong> hosts the backend that coordinates uploads and processing. See <a href="https://vercel.com/legal/privacy-policy">Vercel&rsquo;s Privacy Policy</a>.</li>
     <li><strong>OpenAI</strong> processes media for transcription and transcript text for content generation. See <a href="https://openai.com/policies/privacy-policy/">OpenAI&rsquo;s Privacy Policy</a>.</li>
   </ul>
   <p>These providers may process information in locations described in their own policies. Podcast Studio does not sell your personal information or share it for targeted advertising.</p>
 
   <h2>Retention and deletion</h2>
-  <p>Account and episode information is kept so your workspace remains available across sessions. Uploaded media, transcripts, segment choices, and generated content remain associated with your account until they are deleted or you request deletion, except where limited retention is reasonably necessary for security, backup recovery, fraud prevention, or legal compliance.</p>
+  <p>Account and episode information is kept so your workspace remains available across sessions. Uploaded media, transcripts, segment choices, and generated content remain associated with your account until they are deleted or you request deletion, except where limited retention is reasonably necessary for security, backup recovery, fraud prevention, or legal compliance. Supabase authentication and service logs are retained for a plan-dependent period and may remain for security, abuse prevention, and service reliability after workspace content is deleted.</p>
   <div class="card"><p><strong>To request account and content deletion:</strong> email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20data%20deletion">isaiahdupree33@gmail.com</a> from the email address used to sign in. Use the subject <strong>Podcast Studio data deletion</strong> and state whether you want a specific episode deleted or your account and all associated media, transcripts, and generated content deleted. You may be asked to verify account ownership. Do not attach the media to your request.</p></div>
   <p>After a verified request, data under our control will be deleted or de-identified as applicable, subject to the limited exceptions above. Residual copies may remain temporarily in processor backups and are governed by the processors&rsquo; retention and deletion practices. Signing out of the app ends the local session but does not by itself delete cloud data.</p>
 
@@ -75,7 +76,7 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 
   <h2>Contact</h2>
   <p>For privacy questions, support, or a deletion request, email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">isaiahdupree33@gmail.com</a>.</p>
-  <div class="contact"><h3 style="color:#fff;margin-top:0">Controller</h3><p>Podcast Studio is published by Isaiah Dupree. Contact: <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">isaiahdupree33@gmail.com</a></p></div>
+  <div class="contact"><h3>Controller</h3><p>Podcast Studio is published by Isaiah Dupree. Contact: <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">isaiahdupree33@gmail.com</a></p></div>
 </div></main>
 <footer><div class="wrap">© 2026 Isaiah Dupree. · <a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/">Support</a> · <a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a></div></footer>
 </body></html>
