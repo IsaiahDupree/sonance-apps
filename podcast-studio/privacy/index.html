@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Podcast Studio privacy policy, including account, media, transcript, AI processing, retention, and deletion details.">
+<title>Podcast Studio — Privacy Policy</title>
+<style>
+:root{--accent:#ffb45f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1c1c22;background:#fafbfc;line-height:1.6}
+a{color:#b45309;text-decoration:none}a:hover{text-decoration:underline}
+.hero{background:linear-gradient(150deg,#b45309,#3b210f 55%,#17110d);color:#fff;padding:64px 24px 72px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}.hero .wrap{padding:0 24px}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.1}.hero p{font-size:20px;color:rgba(255,255,255,.94);margin-top:14px;max-width:640px}
+.nav{margin-top:26px;display:flex;gap:18px;flex-wrap:wrap}.nav a{color:#fff;opacity:.9;font-weight:600;font-size:15px}
+main{padding:48px 0 80px}h2{font-size:26px;font-weight:800;letter-spacing:-.01em;margin:38px 0 14px}h3{font-size:19px;font-weight:700;margin:26px 0 6px}
+p,li{font-size:17px;color:#33343a}ul{margin:10px 0 10px 22px}li{margin:6px 0}
+.card{background:#fff;border:1px solid #eceef2;border-radius:16px;padding:22px 24px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.data{width:100%;border-collapse:collapse;margin:14px 0 4px;background:#fff}.data th,.data td{text-align:left;vertical-align:top;padding:14px;border:1px solid #e5e7eb;font-size:15px}.data th{background:#fff7ed;color:#572a07}.table-wrap{overflow-x:auto}
+.contact{background:#24150c;color:#f4e9df;border-radius:16px;padding:26px 28px;margin-top:32px}.contact a{color:#ffc47f}.contact p{color:#ddcfc2}
+footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
+</style></head><body>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">Podcast Studio &middot; Legal</div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated August 19, 2026. This policy covers Podcast Studio for Mac and the cloud services used to operate it.</p>
+  <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/">Podcast Studio Support</a><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">Contact</a></div>
+</div></div>
+<main><div class="wrap">
+  <h2>The short version</h2>
+  <div class="card"><p>Podcast Studio is a <strong>cloud-connected service</strong>. It uses your email address to provide an account, stores the recordings and project content you choose to upload, sends media to OpenAI for transcription, and sends transcript text to OpenAI to generate episode and social content. It does not contain advertising or analytics SDKs and does not use your information for cross-app tracking.</p></div>
+
+  <h2>Information processed</h2>
+  <div class="table-wrap"><table class="data">
+    <thead><tr><th scope="col">Information</th><th scope="col">Why it is processed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Account information</strong><br>Email address, Supabase user identifier, and authentication session</td><td>Send one-time sign-in codes, authenticate you, keep you signed in, and associate episodes with your workspace.</td></tr>
+      <tr><td><strong>Uploaded media and episode details</strong><br>Audio or video files, source filename, episode title, file path, processing status, duration, and detected language</td><td>Upload, store, identify, process, and display each episode.</td></tr>
+      <tr><td><strong>Transcripts and edits</strong><br>Full transcript text, timestamped segments, and whether a segment is cut or restored</td><td>Create an editable transcript and synchronize the choices you make in the episode workspace.</td></tr>
+      <tr><td><strong>Generated content</strong><br>Suggested titles, descriptions, show notes, chapters, hashtags, X threads, LinkedIn posts, and Instagram or TikTok captions</td><td>Provide the AI-assisted content tools you request and make the results available in your workspace.</td></tr>
+      <tr><td><strong>Support communications</strong><br>Your email address and the information you include in a support or deletion request</td><td>Respond to you, troubleshoot a reported issue, verify account ownership, and fulfill the request.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Recordings and transcripts may contain personal information about you or other people. Upload only content you own or have the right and permission to process.</p>
+
+  <h2>How processing works</h2>
+  <ul>
+    <li>The Mac app sends the media you select to storage associated with your authenticated Podcast Studio workspace.</li>
+    <li>The processing service retrieves the media and sends the recording, or its audio, to OpenAI&rsquo;s transcription API to produce text and timestamped segments.</li>
+    <li>Transcript text is sent to OpenAI&rsquo;s text-generation API to create the episode metadata and social copy described above.</li>
+    <li>The transcript, generated content, and your segment edits are stored with the episode so they remain available in the app.</li>
+  </ul>
+
+  <h2>Service providers</h2>
+  <p>The following processors receive information only as needed to operate Podcast Studio:</p>
+  <ul>
+    <li><strong>Supabase</strong> provides authentication, database storage, and media storage. See <a href="https://supabase.com/privacy">Supabase&rsquo;s Privacy Policy</a>.</li>
+    <li><strong>Vercel</strong> hosts the backend that coordinates uploads and processing. See <a href="https://vercel.com/legal/privacy-policy">Vercel&rsquo;s Privacy Policy</a>.</li>
+    <li><strong>OpenAI</strong> processes media for transcription and transcript text for content generation. See <a href="https://openai.com/policies/privacy-policy/">OpenAI&rsquo;s Privacy Policy</a>.</li>
+  </ul>
+  <p>These providers may process information in locations described in their own policies. Podcast Studio does not sell your personal information or share it for targeted advertising.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Account and episode information is kept so your workspace remains available across sessions. Uploaded media, transcripts, segment choices, and generated content remain associated with your account until they are deleted or you request deletion, except where limited retention is reasonably necessary for security, backup recovery, fraud prevention, or legal compliance.</p>
+  <div class="card"><p><strong>To request account and content deletion:</strong> email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20data%20deletion">isaiahdupree33@gmail.com</a> from the email address used to sign in. Use the subject <strong>Podcast Studio data deletion</strong> and state whether you want a specific episode deleted or your account and all associated media, transcripts, and generated content deleted. You may be asked to verify account ownership. Do not attach the media to your request.</p></div>
+  <p>After a verified request, data under our control will be deleted or de-identified as applicable, subject to the limited exceptions above. Residual copies may remain temporarily in processor backups and are governed by the processors&rsquo; retention and deletion practices. Signing out of the app ends the local session but does not by itself delete cloud data.</p>
+
+  <h2>Security</h2>
+  <p>Podcast Studio uses authenticated accounts and encrypted HTTPS connections when communicating with its cloud services. No internet service can guarantee absolute security, so please use an email account you control and do not share one-time sign-in codes.</p>
+
+  <h2>Children</h2>
+  <p>Podcast Studio is not directed to children under 13, and we do not knowingly create accounts for or collect personal information from children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted here and the &ldquo;Last updated&rdquo; date will be revised. Material changes will be communicated where required.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, support, or a deletion request, email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">isaiahdupree33@gmail.com</a>.</p>
+  <div class="contact"><h3 style="color:#fff;margin-top:0">Controller</h3><p>Podcast Studio is published by Isaiah Dupree. Contact: <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">isaiahdupree33@gmail.com</a></p></div>
+</div></main>
+<footer><div class="wrap">© 2026 Isaiah Dupree. · <a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/">Support</a> · <a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a></div></footer>
+</body></html>
