@@ -114,16 +114,19 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <p>vrdesk <strong>never collects, stores, or transmits to us</strong> any of the following: the contents of your
   screen, the windows or documents you have open, your keystrokes, your mouse input, audio, your files, or your
   browsing. There are no analytics, tracking, or advertising SDKs in vrdesk.</p>
-  <p>The <strong>only</strong> personal data vrdesk collects through Apple and RevenueCat is what's needed to remember
-  a purchase across your own devices:</p>
+  <p>The <strong>only</strong> personal data vrdesk collects through Apple and RevenueCat is what's needed to identify
+  the entitlement customer, validate purchases, and remember a Pro unlock across your own devices:</p>
   <ul>
     <li><strong>Sign in with Apple</strong> — a stable, Apple-provided user identifier, used as your account key so a Pro unlock follows you across your own devices.</li>
-    <li><strong>Subscription status</strong> — whether your Pro subscription is active, provided through RevenueCat. This is status only; we never receive your payment details.</li>
+    <li><strong>Purchase and subscription history</strong> — Apple receipt and transaction information, products, entitlement state, renewal or expiration state, and last-seen time processed through RevenueCat. Apple handles payment-card details; neither vrdesk nor RevenueCat receives them from the app.</li>
+    <li><strong>Basic technical context</strong> — device type, operating system, locale, and currency code used to operate the RevenueCat purchase service. RevenueCat says it does not collect precise or coarse location for this SDK flow.</li>
   </ul>
   <p>For App Store privacy disclosure purposes, vrdesk classifies <strong>User ID</strong> and
-  <strong>Purchase History</strong> as data linked to you for <strong>App Functionality</strong>. Neither category is used
-  for advertising or cross-app tracking, and vrdesk does not collect the screen, input, audio, or file content you
-  stream on your local network.</p>
+  <strong>Purchase History</strong> as linked to you. User ID is used for <strong>App Functionality</strong>;
+  Purchase History is used for <strong>App Functionality and Analytics</strong> because RevenueCat provides receipt
+  validation, entitlements, Customer History, Charts, and Experiments. Neither category is used for advertising or
+  cross-app tracking, and vrdesk does not collect the screen, input, audio, or file content you stream on your local
+  network.</p>
 
   <h3>Sign in with Apple</h3>
   <p>Signing in is optional and exists for one reason: to give you a stable account identifier so that a Pro purchase
@@ -134,9 +137,14 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <h3>Purchases &amp; subscriptions (RevenueCat)</h3>
   <p>vrdesk Pro is an optional auto-renewing subscription sold in the iPhone app and handled by <strong>Apple</strong>
   through the App Store. To validate the subscription and unlock Pro across your devices we use
-  <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, which receives an identifier and your
-  <strong>subscription status only</strong> — never your name, payment card, or the content you use vrdesk with.
-  Apple handles all payment information; we never see it. See also
+  <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, which receives the custom Apple-provided user
+  identifier, basic device and locale context, Apple receipt and transaction information, purchase history,
+  entitlement state, and last-seen time. It does not receive your name or email because vrdesk requests neither
+  Sign in with Apple scope, and it never receives your payment card or the screen, input, audio, or file content you
+  use vrdesk with. Apple handles all payment information; we never see it. RevenueCat documents the required
+  Purchase History purposes in its
+  <a href="https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy">Apple App Privacy guidance</a>.
+  See also
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
   <h3>Permissions by device</h3>
@@ -151,16 +159,21 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <p>vrdesk uses a small number of sub-processors, each for a single narrow purpose:</p>
   <ul>
     <li><strong>Apple</strong> — Sign in with Apple, and App Store payment processing.</li>
-    <li><strong>RevenueCat</strong> — subscription status, so Pro unlocks across your devices.</li>
+    <li><strong>RevenueCat</strong> — receipt validation, purchase history, entitlement state, and purchase-service analytics so Pro unlocks across your devices.</li>
     <li><strong>Meta / Horizon</strong> — an entitlement check to confirm you own the vrdesk headset app on the store.</li>
   </ul>
-  <p>There are no advertising or analytics providers.</p>
+  <p>There are no advertising or behavioral-analytics SDKs. RevenueCat's purchase-service analytics are limited to
+  its Customer History, Charts, and Experiments functions and are not used for advertising or cross-app tracking.</p>
 
   <h3>Retention &amp; deletion</h3>
-  <p>We run no servers that hold your usage, so there is nothing about your sessions for us to retain or delete on our
-  side. Any local data — pairing information and preferences — is removed when you <strong>delete the app</strong> on
-  each device. To sever the account link, revoke Sign in with Apple in iOS Settings; to end billing, cancel the
-  subscription in the App Store.</p>
+  <p>The screen, input, audio, and session path remains on your local network and is not retained by vrdesk or
+  RevenueCat. RevenueCat retains the custom user identifier and purchase-service customer history under its service
+  retention practices. Deleting the app removes its ordinary local container, but Apple Keychain data may persist
+  according to platform behavior. To sever future Sign in with Apple access, revoke vrdesk in iOS Settings; to end
+  billing, cancel the subscription in the App Store. To request deletion of the vrdesk customer link and data under
+  our control, email <a href="mailto:isaiahdupree33@gmail.com?subject=vrdesk%20data%20deletion">isaiahdupree33@gmail.com</a>
+  and identify the request as <strong>vrdesk data deletion</strong>. Limited transaction records may remain where
+  required for fraud prevention, accounting, disputes, or law.</p>
 
   <h3>Security</h3>
   <p>A stream only starts after you enter your Mac's <strong>6-digit pairing code</strong> in the headset, and it
