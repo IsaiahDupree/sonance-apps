@@ -22,12 +22,12 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Podcast Studio &middot; Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated August 19, 2026. This policy covers Podcast Studio for Mac and the cloud services used to operate it.</p>
+  <p>Last updated August 20, 2026. This policy covers Podcast Studio for iPhone, iPad, and Mac, plus the cloud services used to operate it.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/">Podcast Studio Support</a><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20privacy">Contact</a></div>
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
-  <div class="card"><p>Podcast Studio is a <strong>cloud-connected service</strong>. It uses your email address to provide an account, stores the recordings, production state, and project content you choose to upload, sends media to OpenAI for transcription, and sends transcript text to OpenAI to generate episode and social content. Supabase and Vercel also retain authentication, request, and runtime diagnostics needed for account security and service operation, including request IP-derived coarse location. Podcast Studio does not contain advertising or analytics SDKs and does not use your information for cross-app tracking.</p></div>
+  <div class="card"><p>Podcast Studio offers a <strong>local guest workspace</strong> and an optional <strong>cloud-connected production workspace</strong>. Guest inspection reads a selected recording&rsquo;s filename, size, duration, and audio or video track counts on your device without uploading or retaining the file. If you choose cloud production, Podcast Studio uses your email address to provide an account, stores the recordings, production state, and project content you upload, sends media to OpenAI for transcription, and sends transcript text to OpenAI to generate episode and social content. Supabase and Vercel also retain authentication, request, and runtime diagnostics needed for account security and service operation, including request IP-derived coarse location. Podcast Studio does not contain advertising or analytics SDKs and does not use your information for cross-app tracking.</p></div>
 
   <h2>Information processed</h2>
   <div class="table-wrap"><table class="data">
@@ -43,9 +43,12 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   </table></div>
   <p>Recordings and transcripts may contain personal information about you or other people. Upload only content you own or have the right and permission to process.</p>
 
+  <h2>Guest workspace</h2>
+  <p>You may continue without an account and inspect a recording locally. Podcast Studio uses Apple&rsquo;s AVFoundation framework on your device to read the selected file&rsquo;s filename, byte size, duration, and number of audio and video tracks. Guest inspection does not upload the file, create an account, or retain a copy. An account is requested only if you choose cloud transcription, saved episodes, transcript editing, or generated content.</p>
+
   <h2>How processing works</h2>
   <ul>
-    <li>The Mac app sends the media you select to storage associated with your authenticated Podcast Studio workspace.</li>
+    <li>The iPhone, iPad, or Mac app sends media to cloud storage only after you sign in and choose the cloud production workflow.</li>
     <li>The processing service retrieves the media and sends the recording, or its audio, to OpenAI&rsquo;s transcription API to produce text and timestamped segments.</li>
     <li>Transcript text is sent to OpenAI&rsquo;s text-generation API to create the episode metadata and social copy described above.</li>
     <li>The transcript, generated content, and your segment edits are stored with the episode so they remain available in the app.</li>
@@ -62,8 +65,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 
   <h2>Retention and deletion</h2>
   <p>Account and episode information is kept so your workspace remains available across sessions. Uploaded media, transcripts, production status, segment choices, and generated content remain associated with your account until they are deleted or you request deletion, except where limited retention is reasonably necessary for security, backup recovery, fraud prevention, or legal compliance. Supabase and Vercel authentication, request, and diagnostic records are retained for provider- and plan-dependent periods and may remain for security, abuse prevention, troubleshooting, and service reliability after workspace content is deleted.</p>
-  <div class="card"><p><strong>To request account and content deletion:</strong> email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20data%20deletion">isaiahdupree33@gmail.com</a> from the email address used to sign in. Use the subject <strong>Podcast Studio data deletion</strong> and state whether you want a specific episode deleted or your account and all associated media, transcripts, and generated content deleted. You may be asked to verify account ownership. Do not attach the media to your request.</p></div>
-  <p>After a verified request, data under our control will be deleted or de-identified as applicable, subject to the limited exceptions above. Residual copies may remain temporarily in processor backups and are governed by the processors&rsquo; retention and deletion practices. Signing out of the app ends the local session but does not by itself delete cloud data.</p>
+  <div class="card"><p><strong>Delete your account in the app:</strong> while signed in, open the <strong>Account</strong> menu, choose <strong>Delete Account</strong>, review the permanent-deletion warning, and confirm <strong>Delete Account and All Data</strong>. Podcast Studio removes your private media and export objects, authentication account, episodes, transcripts, edits, generated content, clips, and job history. This action cannot be undone.</p></div>
+  <p>You may also request help by emailing <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20data%20deletion">isaiahdupree33@gmail.com</a> from the address used to sign in. Use the subject <strong>Podcast Studio data deletion</strong> and do not attach private media. After deletion, residual copies may remain temporarily in processor backups or limited security, fraud-prevention, and legal records under the exceptions above and the providers&rsquo; retention practices. Signing out ends the local session but does not delete cloud data.</p>
 
   <h2>Security</h2>
   <p>Podcast Studio uses authenticated accounts and encrypted HTTPS connections when communicating with its cloud services. No internet service can guarantee absolute security, so please use an email account you control and do not share one-time sign-in codes.</p>

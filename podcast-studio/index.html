@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Support for Podcast Studio for Mac, an AI-assisted podcast transcription and content workspace.">
-<title>Podcast Studio for Mac — Support</title>
+<meta name="description" content="Support for Podcast Studio on iPhone, iPad, and Mac, with local media inspection and optional AI-assisted cloud production.">
+<title>Podcast Studio — Support</title>
 <style>
 :root{--accent:#ffb45f}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -22,7 +22,7 @@ ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;lef
 footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 60px;text-align:center}
 </style></head><body>
 <div class="hero"><div class="wrap">
-  <div class="eyebrow">Podcast Studio for Mac</div>
+  <div class="eyebrow">Podcast Studio &middot; iPhone, iPad, and Mac</div>
   <h1>Turn a recording into a content package.</h1>
   <p>Import an episode, receive a timestamped transcript, refine its segments, and work with AI-generated publishing copy in one workspace.</p>
   <div class="nav"><a href="#about">About</a><a href="#start">Getting started</a><a href="#faq">FAQ</a><a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/privacy/">Privacy</a></div>
@@ -30,14 +30,14 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <main><div class="wrap">
   <h2 id="about">About Podcast Studio</h2>
   <div class="card"><p>Podcast Studio is a cloud-connected podcast production workspace. It uploads an audio or video recording, produces a timestamped transcript, and generates useful starting points for titles, descriptions, show notes, chapters, hashtags, and social posts. In the episode editor, transcript segments can be cut or restored without changing the original recording.</p></div>
-  <div class="card notice"><p><strong>Internet and an account are required.</strong> Podcast Studio uses Supabase for sign-in, database records, and media storage; Vercel to host its processing service; and OpenAI to transcribe recordings and generate written content. Review the <a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/privacy/">Privacy Policy</a> before uploading media.</p></div>
+  <div class="card notice"><p><strong>You can start without an account.</strong> Guest mode inspects a selected recording&rsquo;s filename, size, duration, and track counts locally without uploading it. Sign in only when you choose cloud transcription, saved episodes, transcript editing, or generated content. Cloud production uses Supabase for sign-in, database records, and media storage; Vercel to host processing; and OpenAI to transcribe recordings and generate written content. Review the <a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/privacy/">Privacy Policy</a> before uploading media.</p></div>
 
   <h2 id="start">Getting started</h2>
   <ol class="steps">
-    <li>Enter your email address and use the one-time sign-in code sent to that address.</li>
-    <li>Choose an audio or video recording that you own or have permission to process.</li>
-    <li>Keep an internet connection while the file uploads. Processing continues in the cloud; the episode status updates as work completes.</li>
-    <li>Open the episode to review its timestamped transcript and generated content. Cut or restore transcript segments, and copy the outputs you want to use.</li>
+    <li>Choose <strong>Continue without an account</strong> to inspect a recording locally, or enter your email and use the one-time code when you want cloud production.</li>
+    <li>Choose an audio or video recording that you own or have permission to process. Guest inspection stays on your device.</li>
+    <li>If signed in, keep an internet connection while the file uploads. Processing continues in the cloud and the episode status updates as work completes.</li>
+    <li>Open a cloud episode to review its timestamped transcript and generated content. Cut or restore transcript segments, and copy the outputs you want to use.</li>
   </ol>
 
   <h2 id="faq">Frequently asked questions</h2>
@@ -46,11 +46,11 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <div class="faq"><h3>Is there a file-size limit?</h3><p>The automatic transcription pipeline currently accepts media up to 24 MB. Compress the audio or upload a shorter recording when a file exceeds that limit.</p></div>
   <div class="faq"><h3>Does cutting a segment edit my original recording?</h3><p>No. Cut and restore mark transcript segments for your content workflow; they do not rewrite the uploaded source file.</p></div>
   <div class="faq"><h3>How is my recording used?</h3><p>Your media is stored with your workspace and processed to create the transcript and generated content you requested. It is not used for advertising or cross-app tracking. The app-specific <a href="https://isaiahdupree.github.io/sonance-apps/podcast-studio/privacy/">Privacy Policy</a> explains the data flow, providers, retention, and deletion request process.</p></div>
-  <div class="faq"><h3>How do I delete my account and content?</h3><p>Email <a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20data%20deletion">isaiahdupree33@gmail.com</a> from the address used to sign in, with the subject <strong>Podcast Studio data deletion</strong>. The privacy policy has full instructions.</p></div>
+  <div class="faq"><h3>How do I delete my account and content?</h3><p>While signed in, open the <strong>Account</strong> menu, choose <strong>Delete Account</strong>, then confirm <strong>Delete Account and All Data</strong>. This permanently removes the authentication account, private media and exports, episodes, transcripts, edits, generated content, clips, and processing history. The privacy policy explains limited provider backup, security, fraud-prevention, and legal retention exceptions.</p></div>
 
   <div class="contact">
     <h3 style="color:#fff;margin-top:0">Need help?</h3>
-    <p>Include your macOS version, the episode title if relevant, and a short description of what happened. Do not attach private source media or a sign-in code unless support specifically asks for a diagnostic file.</p>
+    <p>Include your device model, iOS, iPadOS, or macOS version, the episode title if relevant, and a short description of what happened. Do not attach private source media or a sign-in code unless support specifically asks for a diagnostic file.</p>
     <p style="margin-top:10px"><a href="mailto:isaiahdupree33@gmail.com?subject=Podcast%20Studio%20support">isaiahdupree33@gmail.com</a></p>
   </div>
 </div></main>
