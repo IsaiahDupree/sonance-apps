@@ -51,7 +51,7 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated August 19, 2026. This policy covers all Mac apps by Isaiah Dupree.</p>
+  <p>Last updated September 19, 2026. This policy covers all Mac apps by Isaiah Dupree.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com">Contact</a></div>
 </div></div>
 <main><div class="wrap">
@@ -64,6 +64,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <ul>
     <li><strong>Sonance EQ, Mixer, Recorder</strong> process audio locally through macOS Core Audio; recordings are written only to the folder you choose.</li>
     <li><strong>Sonance Voice</strong> processes microphone audio locally in real time.</li>
+    <li><strong>Sonance Scribe</strong> records system and microphone audio only after you press Start, stores separate tracks in your chosen folder, and uses on-device speech recognition. Its local index stores titles, timestamps, file paths, transcription status, and a security-scoped folder bookmark—not transcript text or audio.</li>
+    <li><strong>ArchiveKey</strong> reads original photo and video resources through PhotoKit and writes them only to the folder you select. Filenames, content hashes, Photos identifiers, and backup receipts remain in that folder. PhotoKit may contact Apple's Photos service to retrieve an iCloud-only original.</li>
     <li><strong>Lumen Grab</strong> performs text recognition (OCR) on-device using Apple's Vision framework; captured images are not stored or sent anywhere.</li>
     <li><strong>Lumen Pick</strong> reads a pixel color you point at.</li>
     <li><strong>Clip Contract</strong> stores the primary clipboard content needed to reproduce a copy-and-paste issue, plus a local contract snapshot containing pasteboard type identifiers, byte counts, SHA-256 equality digests, item count, and source-app metadata. It does not retain raw secondary representation payloads. Captures and baselines stay on the Mac, and content-free diagnostic reports omit clipboard values and equality digests.</li>
@@ -90,6 +92,8 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <h2>Permissions you may be asked for</h2>
   <ul>
     <li><strong>Audio capture</strong> (Sonance EQ / Mixer / Recorder) and <strong>microphone</strong> (Sonance Voice) — to process the audio you ask the app to handle.</li>
+    <li><strong>Screen &amp; system audio recording, microphone, speech recognition, and a selected folder</strong> (Sonance Scribe) — to record only when you press Start, transcribe locally, and save the files you requested.</li>
+    <li><strong>Photos and a selected folder</strong> (ArchiveKey) — to read original media and create the backup you requested without changing your Photos library.</li>
     <li><strong>Screen Recording</strong> (Lumen Grab) — required by macOS to read the pixels you select for OCR.</li>
     <li><strong>Accessibility</strong> (SnapZones) — required by macOS to move and resize windows.</li>
   </ul>
