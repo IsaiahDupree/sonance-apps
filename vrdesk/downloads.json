@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-20T22:50:00-04:00",
+  "product_model": {
+    "quest": "$19.99 one-time hypothesis",
+    "companions": "free"
+  },
+  "downloads": {
+    "mac_direct": {
+      "status": "available_preview",
+      "version": "0.9.0",
+      "url": "https://github.com/IsaiahDupree/sonance-apps/releases/download/vrdesk-0.9.0/vrdesk-0.9.0.dmg",
+      "sha256": "aaa06b0dbe1a4331ae7e21408ccc27f13b9efb926e5aecdc003e04215712fe5b"
+    },
+    "mac_app_store": {
+      "status": "waiting_for_review",
+      "version": "1.0",
+      "build": 7,
+      "apple_id": "6792509277",
+      "url": null
+    },
+    "ios_app_store": {
+      "status": "waiting_for_review",
+      "version": "1.0",
+      "build": 4,
+      "apple_id": "6792509277",
+      "url": null
+    },
+    "meta_quest": {
+      "status": "release_preparation",
+      "app_id": "1291486124038268",
+      "devices": ["quest3", "quest3s"],
+      "url": null
+    }
+  }
+}
