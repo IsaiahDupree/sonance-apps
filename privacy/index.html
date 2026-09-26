@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Isaiah Dupree Mac Apps</title>
+<title>Privacy Policy — Isaiah Dupree Apps</title>
 <style>
 :root{--accent:#38e8d6}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -51,16 +51,18 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated September 19, 2026. This policy covers all Mac apps by Isaiah Dupree.</p>
+  <p>Last updated September 26, 2026. This policy covers all Mac apps by Isaiah Dupree and vrdesk web.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com">Contact</a></div>
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
-  <div class="card"><p>These apps are built to work entirely on your Mac. They do not collect, store, or transmit
-  your personal content, and they have no accounts, logins, analytics, tracking, or advertising.</p></div>
+  <div class="card"><p>Most apps on this site work entirely on your Mac and do not collect, store, or transmit
+  your personal content. vrdesk is the connected exception described in full below: its native media stays on your
+  local network, its web media is peer-to-peer, and the web edition sends only connection-setup messages through
+  Supabase. These apps do not use advertising or behavioral tracking.</p></div>
 
   <h2>What the apps access — and where it stays</h2>
-  <p>Each app only touches what it needs to do its job, and that data never leaves your device:</p>
+  <p>Each local utility only touches what it needs to do its job, and its working content stays on your device:</p>
   <ul>
     <li><strong>Sonance EQ, Mixer, Recorder</strong> process audio locally through macOS Core Audio; recordings are written only to the folder you choose.</li>
     <li><strong>Sonance Voice</strong> processes microphone audio locally in real time.</li>
@@ -85,9 +87,10 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <h2>Data we collect</h2>
   <div class="card"><p><strong>None for the Mac utilities above.</strong> We do not operate servers that receive your content, and we do not
   use analytics or tracking SDKs. Apps that are still in evaluation run their purchase flow locally with no
-  network activity at all. <strong>vrdesk</strong> is the one connected app in this collection — it offers optional
-  a subscription without requiring an account; exactly what that involves, and what it never touches, is described in
-  <a href="#vrdesk">vrdesk — Quest headset, iPhone, and Mac</a> below.</p></div>
+  network activity at all. <strong>vrdesk</strong> is the one connected app in this collection — its current iOS release offers
+  an optional subscription without requiring an account, and its web edition uses cloud signaling; exactly what those
+  services handle, and what they never touch, is described in
+  <a href="#vrdesk">vrdesk — Quest headset, web, iPhone, and Mac</a> below.</p></div>
 
   <h2>Permissions you may be asked for</h2>
   <ul>
@@ -99,20 +102,30 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   </ul>
   <p>These permissions are granted by you in System Settings and can be revoked at any time.</p>
 
-  <h2 id="vrdesk">vrdesk — Quest headset, iPhone, and Mac</h2>
+  <h2 id="vrdesk">vrdesk — Quest headset, web, iPhone, and Mac</h2>
   <div class="card"><p>vrdesk streams your Mac's desktop to a Meta Quest headset so you can work in VR, with an
   optional iPhone acting as an extra display. It has more moving parts than the single-purpose Mac utilities above, so
   its data practices are spelled out here in full. The controller of any personal data described in this section is
   <strong>Dupree Ops LLC</strong>. You can reach us at
   <a href="mailto:isaiahdupree33@gmail.com">isaiahdupree33@gmail.com</a>.</p></div>
 
-  <h3>How vrdesk is built — everything stays on your local network</h3>
+  <h3>How native vrdesk is built — screen content stays on your local network</h3>
   <p>vrdesk connects your Mac and your headset <strong>directly, peer-to-peer, over your own Wi-Fi or LAN</strong>.
   The Mac host announces itself on the network with a discovery beacon; the headset finds it and completes a
   <strong>6-digit pairing</strong>; the desktop is then encoded as H.264 video and sent to the headset over WebRTC.
   There is <strong>no cloud server, no relay, and no analytics</strong> in this path. Your screen, keystrokes, mouse
   movements, and audio travel device-to-device on your network and reach only the headset you paired with — they
   never reach us.</p>
+
+  <h3>Web edition</h3>
+  <p>The web edition uses your browser's screen picker to capture only the display, window, or tab you choose. Screen
+  video and optional shared audio travel directly between the host browser and viewer through encrypted WebRTC; vrdesk
+  and Supabase do not receive or store those media frames. The web edition uses
+  <a href="https://supabase.com/privacy">Supabase Realtime</a> to exchange the temporary technical messages needed to
+  establish that peer-to-peer connection: a random room capability, WebRTC session descriptions, ICE network
+  candidates, connection role, and timestamps. A room exists only while its participants are connected; vrdesk does
+  not write it to an application database. Supabase may process ordinary service metadata such as IP address and
+  connection logs under its privacy policy. No vrdesk account, name, email, analytics profile, or recording is created.</p>
 
   <h3>What vrdesk collects — and what it never touches</h3>
   <p>vrdesk <strong>never collects, stores, or transmits to us</strong> any of the following: the contents of your
@@ -153,6 +166,11 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <h3>Mac App Store edition</h3>
   <p>The native Mac App Store edition is view-only. It contains no RevenueCat or analytics SDK and sends no purchase identifier to a server. Apple's content picker lets you select one display or window. JPEG frames and short-lived pairing tokens remain in memory and travel only to paired devices on the local network. The app does not retain recordings. Stopping sharing disconnects viewers and invalidates session tokens. This local stream is not encrypted; use a trusted network. The edition requires local network access and your selected screen/window capture, but no Accessibility permission.</p>
 
+  <h3>Web permissions</h3>
+  <p>The web edition requests <strong>Display Capture</strong> only after you press “Choose what to share.” Your browser
+  presents its own picker, shows an active-sharing indicator, and lets you stop the capture at any time. Immersive mode
+  requests <strong>WebXR</strong> only after you press “Enter VR” in a compatible Quest Browser.</p>
+
   <h3>Permissions by device</h3>
   <ul>
     <li><strong>Full direct-download Mac host</strong> — <em>Screen Recording</em> (required by macOS to capture your desktop for streaming) and <em>Accessibility</em> (to inject keyboard and mouse input coming from the headset).</li>
@@ -167,13 +185,15 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
     <li><strong>Apple</strong> — App Store payment processing and, in older builds, Sign in with Apple.</li>
     <li><strong>RevenueCat</strong> — receipt validation, purchase history, entitlement state, and purchase-service analytics so Pro unlocks across your devices.</li>
     <li><strong>Meta / Horizon</strong> — an entitlement check to confirm you own the vrdesk headset app on the store.</li>
+    <li><strong>Supabase</strong> — transient Realtime delivery of web-edition WebRTC setup messages; it does not receive the shared screen or audio frames.</li>
   </ul>
   <p>There are no advertising or behavioral-analytics SDKs. RevenueCat's purchase-service analytics are limited to
   its Customer History, Charts, and Experiments functions and are not used for advertising or cross-app tracking.</p>
 
   <h3>Retention &amp; deletion</h3>
-  <p>The screen, input, audio, and session path remains on your local network and is not retained by vrdesk or
-  RevenueCat. RevenueCat retains the custom user identifier and purchase-service customer history under its service
+  <p>The native screen, input, and audio path remains on your local network and is not retained by vrdesk or
+  RevenueCat. Web-edition screen and audio media are peer-to-peer; its Realtime setup messages are transient, while
+  Supabase may retain operational logs under its service practices. RevenueCat retains the custom user identifier and purchase-service customer history under its service
   retention practices. Deleting the app removes its ordinary local container, but Apple Keychain data may persist
   according to platform behavior. Older installations can revoke their prior Sign in with Apple authorization in
   iOS Settings; this does not delete purchase history or cancel a subscription. To end billing, cancel the
@@ -183,8 +203,10 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   required for fraud prevention, accounting, disputes, or law.</p>
 
   <h3>Security</h3>
-  <p>A stream only starts after you enter your Mac's <strong>6-digit pairing code</strong> in the headset, and it
-  flows peer-to-peer on your own network. Your Mac will not stream to a headset that hasn't completed pairing.</p>
+  <p>A native stream only starts after you enter your Mac's <strong>6-digit pairing code</strong> in the headset, and it
+  flows peer-to-peer on your own network. The web edition uses an unguessable 80-bit room capability and encrypted
+  WebRTC media. Anyone who receives the complete live web room link can attempt to join that session, so share it only
+  with the intended viewer and stop sharing when finished.</p>
 
   <h2>Children</h2>
   <p>These apps, including vrdesk, are not directed to children under 13 and do not knowingly collect any information
