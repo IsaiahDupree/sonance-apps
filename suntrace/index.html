@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SunTrace Support</title>
+  <meta name="description" content="Help and support for SunTrace, the sunlight exposure tracker for iPhone and iPad.">
+  <style>
+    :root { color-scheme: dark; --ink:#f8fafc; --muted:#cbd5e1; --card:#172033; --line:#334155; --sun:#fb923c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#0f172a; color:var(--ink); line-height:1.6; }
+    a { color:#fdba74; }
+    header { padding:72px 24px 56px; background:radial-gradient(circle at 80% 0,#7c2d12 0,transparent 42%),linear-gradient(145deg,#1e293b,#0f172a); }
+    main, .inner { max-width:760px; margin:auto; }
+    h1 { margin:0; font-size:clamp(42px,8vw,68px); letter-spacing:-.04em; }
+    header p { max-width:620px; margin:14px 0 0; color:var(--muted); font-size:20px; }
+    nav { display:flex; gap:20px; margin-top:24px; flex-wrap:wrap; }
+    main { padding:44px 24px 80px; }
+    h2 { margin:34px 0 12px; font-size:26px; }
+    .card { padding:20px 22px; margin:14px 0; border:1px solid var(--line); border-radius:16px; background:var(--card); }
+    .card h3 { margin:0 0 6px; font-size:18px; }
+    .card p { margin:0; color:var(--muted); }
+    ol { padding-left:24px; }
+    li { margin:8px 0; color:var(--muted); }
+    .notice { border-left:4px solid var(--sun); }
+    footer { border-top:1px solid var(--line); padding:28px 24px 48px; color:#94a3b8; text-align:center; }
+  </style>
+</head>
+<body>
+  <header><div class="inner">
+    <h1>SunTrace</h1>
+    <p>Track time outside, follow the local UV forecast, and build a clearer picture of your sunlight habits.</p>
+    <nav><a href="#help">Get help</a><a href="privacy/">Privacy policy</a><a href="mailto:isaiahdupree33@gmail.com?subject=SunTrace%20support">Email support</a></nav>
+  </div></header>
+  <main>
+    <section>
+      <h2>What SunTrace does</h2>
+      <div class="card"><h3>Exposure sessions</h3><p>Start and stop an outdoor session to record elapsed time, local UV conditions, and your estimated sunlight dose.</p></div>
+      <div class="card"><h3>Forecast planning</h3><p>See current and upcoming UV conditions based on your approximate location so you can plan time outside.</p></div>
+      <div class="card"><h3>History and progress</h3><p>Review prior sessions, weekly totals, streaks, and badges in one place.</p></div>
+    </section>
+    <section id="help">
+      <h2>Common questions</h2>
+      <div class="card"><h3>Why does SunTrace request location?</h3><p>Your location is used to look up local UV conditions and nearby sun spots. SunTrace requests access only while you use the app.</p></div>
+      <div class="card"><h3>How do I delete my account?</h3><p>Open Profile, scroll to Account &amp; Support, then choose Delete Account. This permanently removes your account and private SunTrace data.</p></div>
+      <div class="card"><h3>My UV reading looks wrong.</h3><p>Pull to refresh and confirm location access is enabled. Forecasts come from Open-Meteo and can differ from a nearby physical sensor.</p></div>
+      <div class="card"><h3>How do I contact support?</h3><p>Email <a href="mailto:isaiahdupree33@gmail.com?subject=SunTrace%20support">isaiahdupree33@gmail.com</a> with your device model, iOS version, and a short description of the issue.</p></div>
+    </section>
+    <section>
+      <h2>Important health note</h2>
+      <div class="card notice"><p>SunTrace provides estimates for awareness and habit tracking. It is not a medical device and does not diagnose, prevent, or treat any condition. UV exposure can damage skin; follow local health guidance and advice from a qualified clinician.</p></div>
+    </section>
+  </main>
+  <footer>© 2026 Isaiah Dupree · <a href="privacy/">Privacy</a> · <a href="mailto:isaiahdupree33@gmail.com?subject=SunTrace%20support">Contact</a></footer>
+</body>
+</html>
