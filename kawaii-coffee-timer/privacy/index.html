@@ -21,59 +21,55 @@ footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Kawaii Coffee Timer &middot; Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated August 19, 2026. This policy covers Kawaii Coffee Timer for iPhone and iPad.</p>
+  <p>Last updated September 27, 2026. This policy covers the native Kawaii Coffee Timer app for iPhone.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/">Support</a><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20privacy">Contact</a></div>
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
-  <div class="card"><p>Kawaii Coffee Timer can be used without an account. Guest timer, brew-journal, bean, achievement, and customization data stays on the device. If you create an optional account or use an account feature, the app sends the information described below to Supabase for authentication and hosted app functions. The current release does not sell data, serve ads, track activity across other companies&rsquo; apps or websites, or use a configured production analytics service.</p></div>
+  <div class="card"><p>Kawaii Coffee Timer requires an email-based account and uses Supabase for authentication and synchronized app data. The current release does not sell data, serve ads, track activity across other companies&rsquo; apps or websites, offer purchases, or use a third-party product-analytics or crash-reporting service.</p></div>
 
   <h2>Information stored on your device</h2>
-  <p>The app uses local storage to keep the experience working between launches. Depending on the features you use, this can include:</p>
+  <p>The app keeps limited settings on the device so the experience works between launches. This can include:</p>
   <ul>
-    <li>timer lengths, current progress, points, themes, cup colors, accessories, sound choices, tutorial status, and onboarding selections;</li>
-    <li>brew method, time, rating, notes, coffee and water amounts, and approximate caffeine totals;</li>
-    <li>bean names, roasters, origins, roast levels, grind sizes, and flavor notes;</li>
-    <li>achievements, streaks, and other app progress; and</li>
-    <li>local notification and reminder settings.</li>
+    <li>the signed-in Supabase session stored in the operating system&rsquo;s app container;</li>
+    <li>whether the optional daily reminder is enabled and its selected time; and</li>
+    <li>temporary timer state while the app is running.</li>
   </ul>
-  <p>Guest use does not require this information to be associated with an online account.</p>
+  <p>The synchronized coffee data described below is associated with the signed-in account.</p>
 
-  <h2>Optional account and hosted data</h2>
-  <p>Kawaii Coffee Timer uses <a href="https://supabase.com/privacy">Supabase</a> for optional authentication, database records, and file storage. If you create or use an account, Supabase may process:</p>
+  <h2>Account and hosted data</h2>
+  <p>Kawaii Coffee Timer uses <a href="https://supabase.com/privacy">Supabase</a> for required authentication and synchronized database records. Supabase may process:</p>
   <ul>
-    <li>your email address, display name, account identifier, authentication-provider information, and security-session information;</li>
+    <li>your email address, account identifier, password-verification material, and security-session information;</li>
     <li>authentication audit events containing the linked account identifier, IP address, and user agent; the IP address can indicate coarse approximate location but is not device GPS or precise location;</li>
-    <li>retained API, authentication, storage, and Edge Function request, response, and error metadata used to debug failures, protect the service, and maintain reliability, such as timestamps, service source, route or operation, response status, and error details;</li>
-    <li>selected onboarding and profile preferences, including barista name, brew-method preference, daily goal, flavor profile, theme, and reminder choices;</li>
-    <li>an avatar image if you explicitly select and upload one; and</li>
-    <li>brew methods, sessions, beans, or related app records when a cloud-data feature is used.</li>
+    <li>retained API, authentication, and database request, response, and error metadata used to debug failures, protect the service, and maintain reliability; and</li>
+    <li>brew recipes, beans, roaster and origin details, roast and grind choices, flavor notes, completed brew sessions, coffee and water amounts, ratings, tasting notes, timestamps, and achievements.</li>
   </ul>
   <p>Supabase automatically retains authentication audit events in external log storage to secure accounts, detect abuse, and support compliance. Its platform Logs Explorer also retains request, response, and error metadata from API, authentication, storage, database, and Edge Function services according to the project plan. These records can be associated with an account or network request, so Kawaii Coffee Timer discloses linked <strong>Other Diagnostic Data</strong> for app functionality, as well as linked coarse location derived from IP address. The app does not request device location permission or collect GPS coordinates. See <a href="https://supabase.com/docs/guides/monitoring-and-debugging/logs">Supabase Logging</a>. Passwords are handled by Supabase authentication and are not provided to the publisher in readable form. Row-level access controls are used to separate authenticated users&rsquo; app records. No internet system can be guaranteed completely secure, so please use a unique password and do not put sensitive personal information in brew notes.</p>
 
   <h2>Sign-in options</h2>
-  <p>The current Kawaii Coffee Timer build supports optional email-based accounts and guest mode. It does not expose Sign in with Apple because the Apple provider is not enabled or verified, and Google sign-in remains hidden unless a valid production client is configured. The app does not claim either provider works in this release.</p>
+  <p>The current build supports email-and-password account creation, sign-in, password reset, sign-out, and in-app account deletion. It does not include guest mode, Sign in with Apple, Google sign-in, social sign-in, or third-party identity SDKs.</p>
 
   <h2>Notifications and device features</h2>
-  <p>The app may request notification permission after a completed brew or when you enable reminders. Current timer and reminder notifications are scheduled locally; the app does not register a server-side push token for marketing. If you choose an avatar, the app requests photo-library access only to select that image. If you enable biometric sign-in, Apple performs Face ID or Touch ID matching on the device; the app does not receive biometric templates.</p>
+  <p>The app requests notification permission only when you enable the optional daily brew reminder in Settings. That reminder is scheduled locally; the app does not register a server-side push token or send marketing notifications. The current build does not request camera, photo-library, microphone, contacts, motion, health, or location permission.</p>
 
   <h2>Analytics, diagnostics, advertising, and tracking</h2>
-  <p>The release described by this policy does not include the Sentry, RevenueCat, Superwall, or Google Sign-In native SDKs and does not contain a production PostHog key. It therefore does not send product analytics or crash reports to those services and has no live purchase catalog. Supabase service logs are still retained for app functionality as described above. The app does not serve advertising, request permission for cross-app tracking, sell personal information, or share personal information for targeted advertising. If a future release enables analytics, additional diagnostics, purchases, or advertising, this policy and the App Store privacy disclosures will be updated before collection begins where required.</p>
+  <p>The release described by this policy does not include Sentry, RevenueCat, Superwall, PostHog, Google, Facebook, or advertising SDKs. It does not send product analytics or crash reports to those services and has no purchase catalog. Supabase service logs are still retained for account security and app functionality as described above. The app does not request permission for cross-app tracking, sell personal information, or share personal information for targeted advertising. If a future release enables analytics, additional diagnostics, purchases, or advertising, this policy and the App Store privacy disclosures will be updated before collection begins where required.</p>
 
   <h2>Purchases</h2>
   <p>The current release does not offer a live in-app purchase or subscription. If a future release enables App Store purchases, Apple will process payment information and may provide purchase status needed to unlock and restore features. This policy will identify any additional purchase-validation provider before that service is activated.</p>
 
   <h2>Why information is used</h2>
-  <p>Information is used only to provide the feature you request, authenticate and secure optional accounts, preserve preferences and progress, respond to support or deletion requests, prevent abuse, and meet legal obligations. It is not used to build an advertising profile.</p>
+  <p>Information is used only to provide requested app features, authenticate and secure accounts, preserve preferences and progress, respond to support or deletion requests, prevent abuse, and meet legal obligations. It is not used to build an advertising profile.</p>
 
   <h2>Retention and deletion</h2>
-  <p>Local data remains until you reset it, delete the app, or the operating system removes it, subject to Apple&rsquo;s backup behavior. To clear timer progress and customizations while keeping the app, use <strong>Settings → Reset All Data</strong>.</p>
-  <p>To delete a hosted account in the app, sign in, open <strong>Profile</strong>, scroll to <strong>Delete Account</strong>, tap it, and confirm the red <strong>Delete Account</strong> action. The server requires both a valid signed-in session and that explicit confirmation. It removes the hosted Kawaii Coffee Timer profile, preferences, brew methods, beans, sessions, and hosted avatar objects associated with the user, then permanently deletes the Supabase authentication identity.</p>
+  <p>Local reminder settings and cached app state remain until you disable the reminder, sign out where applicable, delete the app, or the operating system removes them, subject to Apple&rsquo;s backup behavior. Individual beans and brew sessions can be deleted from their corresponding app screens.</p>
+  <p>To delete a hosted account in the app, sign in, open <strong>Settings</strong>, choose <strong>Delete Account and Data</strong>, and confirm. The server requires a valid signed-in session. It permanently deletes the Supabase authentication identity; database foreign-key rules then delete that user&rsquo;s Kawaii Coffee Timer recipes, beans, sessions, and achievements.</p>
   <p>The Supabase authentication tenant is shared with other publisher services. Deleting the authentication identity is therefore global and irreversible, and can also delete or make inaccessible records in those services that are linked to the same identity. This cannot be undone. Provider backups expire under the provider&rsquo;s retention process. Supabase authentication audit logs, API and service diagnostics, and limited records may remain under the provider&rsquo;s plan-based retention controls when needed for security, reliability, fraud prevention, compliance, dispute handling, or law.</p>
   <p>If you cannot sign in or access the in-app deletion control, email <a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20account%20deletion">isaiahdupree33@gmail.com</a> from the account email with the subject <strong>Kawaii Coffee Timer account deletion</strong>. Ownership may be verified before processing this fallback request.</p>
 
   <h2>Service providers and disclosures</h2>
-  <p>Supabase processes optional account data on the publisher&rsquo;s behalf. Apple provides the App Store, operating-system services, and any future App Store purchase processing. Google processes information only if a configured Google sign-in option is offered and you choose it. Information may also be disclosed when required by law, to protect users or the service, or as part of a business transfer subject to applicable safeguards.</p>
+  <p>Supabase processes account and synchronized app data on the publisher&rsquo;s behalf. Apple provides the App Store and operating-system services. Information may also be disclosed when required by law, to protect users or the service, or as part of a business transfer subject to applicable safeguards.</p>
 
   <h2>Children</h2>
   <p>Kawaii Coffee Timer is a general-audience productivity and coffee app. It is not directed to children under 13, and the publisher does not knowingly collect personal information from a child under 13. A parent or guardian who believes a child supplied account information can contact the address below to request deletion.</p>

@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Support for Kawaii Coffee Timer, a cozy focus timer, guided brew timer, and coffee journal for iPhone and iPad.">
+<meta name="description" content="Support for Kawaii Coffee Timer, a native guided brew timer, bean library, and coffee journal for iPhone.">
 <title>Kawaii Coffee Timer — Support</title>
 <style>
 :root{--accent:#f6a9bc;--cream:#fff5e7;--coffee:#5c382d}
@@ -22,36 +22,33 @@ ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;lef
 footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 60px;text-align:center}
 </style></head><body>
 <div class="hero"><div class="wrap">
-  <div class="eyebrow">Kawaii Coffee Timer for iPhone &amp; iPad</div>
-  <h1>Focus, brew, and keep a cozy coffee journal.</h1>
-  <p>Run a customizable focus timer, follow step-by-step coffee recipes, record brews and beans, and make the experience your own.</p>
+  <div class="eyebrow">Kawaii Coffee Timer for iPhone</div>
+  <h1>Brew, taste, and remember every cup.</h1>
+  <p>Follow calm step-by-step recipes, dial in coffee-to-water ratios, organize beans, and keep a useful tasting journal.</p>
   <div class="nav"><a href="#about">About</a><a href="#start">Getting started</a><a href="#faq">FAQ</a><a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/privacy/">Privacy</a></div>
 </div></div>
 <main><div class="wrap">
   <h2 id="about">About Kawaii Coffee Timer</h2>
-  <div class="card"><p>Kawaii Coffee Timer combines a cozy Pomodoro-style focus timer with guided timers for pour-over, French press, AeroPress, espresso, and cold brew. You can adjust coffee and water amounts, save a brew history, organize beans, review approximate caffeine totals, earn achievements, and unlock visual customizations with points earned in the app.</p></div>
-  <div class="card notice"><p><strong>An account is optional.</strong> Choose <strong>Continue without account</strong> to use the core timers and keep data on the device. Email-based accounts use Supabase for authentication and selected profile or onboarding information. The current App Store release has no live subscription catalog; free timer features remain available.</p></div>
+  <div class="card"><p>Kawaii Coffee Timer is a native SwiftUI brewing companion for pour over, French press, AeroPress, espresso, and cold brew. Adjust the coffee dose, follow each timed step, save beans and tasting notes, review brew history, build streaks, and unlock achievements.</p></div>
+  <div class="card notice"><p><strong>An email-based account is required.</strong> It keeps recipes, beans, completed brews, and achievements synchronized through Supabase. The app has no ads, subscriptions, cross-app tracking, or third-party product analytics.</p></div>
 
   <h2 id="start">Getting started</h2>
   <ol class="steps">
-    <li>Complete the short setup, then choose <strong>Continue without account</strong> or create an optional email-based account.</li>
-    <li>Use <strong>Timer</strong> for a customizable focus-and-break cycle, or open <strong>Brew</strong> and select a guided coffee method.</li>
-    <li>For a guided brew, set the coffee amount, follow each timed pour or wait step, and let the app record the completed session locally.</li>
-    <li>Use <strong>History</strong>, <strong>Beans</strong>, and <strong>Awards</strong> to review sessions, organize coffee, and track progress.</li>
+    <li>Create an email-based account or sign in to an existing one.</li>
+    <li>Open <strong>Brew</strong>, choose a method, select a bean if desired, and set your coffee dose.</li>
+    <li>Start the guided timer, follow the recipe steps, then finish and rate the brew to add it to your journal.</li>
+    <li>Use <strong>Beans</strong>, <strong>Journal</strong>, <strong>Awards</strong>, and <strong>Settings</strong> to organize coffee, review progress, schedule a local reminder, or manage the account.</li>
   </ol>
 
   <h2 id="faq">Frequently asked questions</h2>
-  <div class="faq"><h3>Do I need an account?</h3><p>No. The core timers work without an account. Choose <strong>Continue without account</strong> during setup or sign-in to use guest mode with local storage.</p></div>
-  <div class="faq"><h3>Why did the app ask for notification permission?</h3><p>After your first completed guided brew, the app may ask permission to schedule local timer and reminder notifications. Those alerts are created on your device. You can turn notification access off at any time in iOS or iPadOS Settings.</p></div>
-  <div class="faq"><h3>Why are subscriptions unavailable?</h3><p>The current App Store release does not contain a live purchase configuration or purchasable subscription catalog. The app keeps the free coffee-timer experience available and does not charge you from the unavailable screen.</p></div>
-  <div class="faq"><h3>How do I erase information on my device?</h3><p>Open <strong>Settings</strong> and choose <strong>Reset All Data</strong> to clear timer progress and customizations. You can also delete the app to remove its local app container, subject to Apple&rsquo;s backup behavior.</p></div>
-  <div class="faq"><h3>How do I delete an account?</h3><p>While signed in, open <strong>Profile</strong>, scroll to <strong>Delete Account</strong>, tap it, and confirm the red <strong>Delete Account</strong> action. This permanently removes the Supabase authentication identity and hosted Kawaii Coffee Timer profile, preferences, brew records, and hosted avatar objects associated with it. Because the authentication tenant is shared with other publisher services, deleting the identity can also remove records in those services that are tied to the same account. This cannot be undone.</p><p style="margin-top:10px">If you cannot sign in or access the in-app control, email <a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20account%20deletion">isaiahdupree33@gmail.com</a> from the address associated with the account with the subject <strong>Kawaii Coffee Timer account deletion</strong>. Support may verify ownership before processing the fallback request.</p></div>
-  <div class="faq"><h3>Are caffeine totals medical advice?</h3><p>No. Caffeine totals are rough estimates based on brew records and a general coffee-dose assumption. They are not a measurement, diagnosis, or medical recommendation.</p></div>
-  <div class="faq"><h3>What information leaves my device?</h3><p>Guest timer and journal use is local. If you create an account, authentication and selected account or onboarding information are processed by Supabase. Supabase automatically retains authentication security logs containing the linked account identifier, IP address, and user agent; the IP address can indicate coarse approximate location, but the app does not request GPS or precise location. Supabase also retains API, authentication, storage, and Edge Function request, response, and error metadata for security, debugging, and service reliability. The current release does not use advertising, cross-app tracking, a live purchase service, or configured production analytics. See the app-specific <a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/privacy/">Privacy Policy</a> for the complete data flow.</p></div>
+  <div class="faq"><h3>Do I need an account?</h3><p>Yes. An email-based account is required so the app can securely synchronize your recipes, beans, journal entries, and achievements. Passwords are processed by Supabase authentication and are not available to the publisher in readable form.</p></div>
+  <div class="faq"><h3>Why did the app ask for notification permission?</h3><p>Notification permission is requested only when you enable the optional daily brew reminder in <strong>Settings</strong>. The reminder is scheduled on your device, not sent through a marketing push service. You can disable it in the app or in iOS Settings.</p></div>
+  <div class="faq"><h3>How do I delete an account?</h3><p>While signed in, open <strong>Settings</strong>, choose <strong>Delete Account and Data</strong>, and confirm. This permanently deletes the Supabase authentication identity and the Kawaii Coffee Timer recipes, beans, brew sessions, and achievements tied to it. Because the authentication tenant is shared with other publisher services, deleting the identity can also remove records in those services that use the same account. This cannot be undone.</p><p style="margin-top:10px">If you cannot sign in or access the in-app control, email <a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20account%20deletion">isaiahdupree33@gmail.com</a> from the address associated with the account with the subject <strong>Kawaii Coffee Timer account deletion</strong>. Support may verify ownership before processing the fallback request.</p></div>
+  <div class="faq"><h3>What information leaves my device?</h3><p>Supabase processes the account email and identifier plus the recipes, beans, journal entries, tasting notes, and achievements you choose to store. Supabase service logs can also retain linked request diagnostics, IP address, and user agent for security and reliability; an IP address can indicate coarse approximate location, but the app does not request GPS or precise location. The app does not use advertising, cross-app tracking, purchases, or third-party product analytics. See the app-specific <a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/privacy/">Privacy Policy</a> for the complete data flow.</p></div>
 
   <div class="contact">
     <h3 style="color:#fff;margin-top:0">Need help?</h3>
-    <p>Include your device model, iOS or iPadOS version, and a short description of what happened. Please do not send a password, sign-in code, authentication token, or other sensitive information.</p>
+    <p>Include your device model, iOS version, and a short description of what happened. Please do not send a password, sign-in code, authentication token, or other sensitive information.</p>
     <p style="margin-top:10px"><a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20support">isaiahdupree33@gmail.com</a></p>
   </div>
 </div></main>
