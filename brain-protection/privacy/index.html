@@ -12,7 +12,7 @@
 <body>
   <header class="wrap hero"><div class="eyebrow">BRAIN PROTECTION</div><h1>Privacy Policy</h1><p>Effective September 27, 2026</p><a class="back" href="../">← Back to Brain Protection</a></header>
   <main class="wrap">
-    <div class="card"><p><strong>The short version:</strong> Brain Protection does not collect your data. Your goals, Screen Time selections, intervention choices, and Brain Report stay on your device.</p></div>
+    <div class="card"><p><strong>The short version:</strong> Screen Time selections, intervention choices, and Brain Report stay on your device. Optional AI reminders send only the writing context you choose to our cloud service and OpenAI when you tap Generate.</p></div>
 
     <h2>Information Brain Protection stores</h2>
     <p>Brain Protection stores the following information locally in an Apple App Group container shared only by the app and its Screen Time extensions:</p>
@@ -22,22 +22,27 @@
       <li>timestamps and outcomes for choices you explicitly make at an intervention;</li>
       <li>opaque app, category, and website tokens returned by Apple’s Family Controls framework.</li>
     </ul>
-    <p>This information is used only to provide shields, replacement actions, streaks, committed-minute totals, and on-device behavioral patterns. It is not transmitted to the developer or any third party.</p>
+    <p>This information is used only to provide shields, replacement actions, streaks, committed-minute totals, and on-device behavioral patterns. Screen Time selection tokens and intervention history are never included in AI requests. The optional AI feature is described below.</p>
 
     <h2>Screen Time and Family Controls</h2>
     <p>Brain Protection requests Apple’s individual Family Controls authorization only after you choose to enable it. Apple’s Family Activity picker lets you select apps, categories, and websites without revealing your browsing history to Brain Protection. The app receives opaque tokens and uses Apple’s Managed Settings and Device Activity frameworks to apply the protection you request. You can revoke Screen Time access in iOS Settings.</p>
+
+    <h2>Optional AI reminders</h2>
+    <p>When you tap Generate, Brain Protection sends your active goal, its reason, optional name, chosen tone, next action, and writing guidance to a developer-operated service hosted on Vercel, which calls OpenAI. Do not include information you do not want processed in the cloud. You can use the app without this feature.</p>
+    <p>Generated reminders are saved in the on-device App Group and displayed offline. We do not store your goal text or generated reminders in our server database. The database stores a hash of your private device connection code, an administrative device label, access status, and daily generation counts to authenticate requests and limit usage. Vercel may process technical request metadata. OpenAI requests disable response storage, but provider security and abuse-monitoring retention may still apply under <a href="https://platform.openai.com/docs/guides/your-data">OpenAI’s API data policies</a>.</p>
+    <p>The connection code is stored in your device Keychain. Use Customize shield → Disconnect AI to remove it, and Delete saved AI reminders to remove the local generated text. Contact support to revoke server access or remove its access and usage records. Neither an OpenAI API key nor a database administrator key is distributed in the app.</p>
 
     <h2>Purchases</h2>
     <p>The optional Brain Protection Pro lifetime purchase is processed by Apple through StoreKit. The developer does not receive your payment card details. The app reads Apple-signed transaction status to determine whether Pro is unlocked. Apple’s handling of purchase information is governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
     <h2>Data collection, tracking, and third parties</h2>
-    <p>Brain Protection has no account system, advertising, analytics, tracking, developer-operated backend, or third-party SDK. It does not sell, rent, or share personal information because it does not collect personal information.</p>
+    <p>Brain Protection has no advertising or behavioral tracking. Optional cloud AI uses the providers described above solely to deliver reminders and protect service access. We do not sell or rent personal information.</p>
 
     <h2>Children</h2>
-    <p>Brain Protection is a self-directed productivity utility for adults and is not directed to children. It does not knowingly collect information from children or anyone else.</p>
+    <p>Brain Protection is a self-directed productivity utility for adults and is not directed to children. The optional AI feature is not intended for children.</p>
 
     <h2>Data deletion</h2>
-    <p>Use Settings → Reset All Data inside Brain Protection to delete the app’s goals, selections, actions, and history. Deleting the app also removes its local container according to iOS behavior. App Store purchase records remain with Apple so purchases can be restored.</p>
+    <p>Use Settings → Reset All Data inside Brain Protection to delete the app’s goals, selections, actions, saved AI reminders, and history. Disconnect AI separately to remove its Keychain connection. Deleting the app also removes its local container according to iOS behavior. App Store purchase records remain with Apple so purchases can be restored.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the revised policy will be posted at this URL with a new effective date.</p>
