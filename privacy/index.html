@@ -73,7 +73,7 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
     <li><strong>Clip Contract</strong> stores the primary clipboard content needed to reproduce a copy-and-paste issue, plus a local contract snapshot containing pasteboard type identifiers, byte counts, SHA-256 equality digests, item count, and source-app metadata. It does not retain raw secondary representation payloads. Captures and baselines stay on the Mac, and content-free diagnostic reports omit clipboard values and equality digests.</li>
     <li><strong>Menu Vitals</strong> reads system statistics and the process list locally.</li>
     <li><strong>SnapZones</strong> uses the macOS Accessibility API to move windows; it reads nothing about their contents.</li>
-    <li><strong>DevForge</strong> transforms text you enter entirely offline.</li>
+    <li><strong>DevForge</strong> transforms text you enter entirely on-device. Its limited product analytics never include that text or the generated output.</li>
   </ul>
 
   <h2>Purchases</h2>
@@ -85,8 +85,7 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
   <h2>Data we collect</h2>
-  <div class="card"><p><strong>None for the Mac utilities above.</strong> We do not operate servers that receive your content, and we do not
-  use analytics or tracking SDKs. Apps that are still in evaluation run their purchase flow locally with no
+  <div class="card"><p><strong>None for the Mac utilities above except DevForge.</strong> We do not operate servers that receive your content. DevForge sends a random installation identifier and content-free product interaction, foreground-active time, bounded error, and purchase outcome events to Supabase for analytics; its full disclosure is available in the <a href="../forge/privacy/">DevForge Privacy Policy</a>. No app uses this data for advertising or cross-app tracking. Apps that are still in evaluation run their purchase flow locally with no
   network activity at all. <strong>vrdesk</strong> is the one connected app in this collection — its current iOS release offers
   an optional subscription without requiring an account, and its web edition uses cloud signaling; exactly what those
   services handle, and what they never touch, is described in
