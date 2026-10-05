@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CastDeck — Support</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18243c;background:#f7f9fc}
+    header{padding:64px 24px;background:linear-gradient(135deg,#1354b9,#382a84);color:white}main,header>div,footer{max-width:800px;margin:auto}main{padding:30px 24px 60px}h1{font-size:44px;line-height:1.15;margin:0 0 20px}h2{margin-top:38px}a{color:#145bb5}header a{color:white}nav{display:flex;gap:24px;flex-wrap:wrap}li{margin:10px 0}.card{padding:22px;border:1px solid #dce3ee;border-radius:16px;background:white;margin:24px 0}footer{padding:28px 24px;border-top:1px solid #dce3ee;font-size:14px}
+  </style>
+</head>
+<body>
+  <header><div><p>CastDeck for macOS</p><h1>Your media. Your playback devices.</h1><p>Discover nearby receivers, choose a file or direct media link, and use the controls available for your device.</p><nav><a href="#start">Getting started</a><a href="#help">Troubleshooting</a><a href="./privacy/">Privacy</a></nav></div></header>
+  <main>
+    <h2 id="start">Getting started</h2>
+    <ol>
+      <li>Run CastDeck on macOS 13 or later. Connect the Mac and your receiver to the same local network.</li>
+      <li>Allow Local Network access when macOS asks, then rescan the device list if necessary.</li>
+      <li>Choose a video or audio file you own, or paste a direct media URL. A webpage URL is not a direct media URL.</li>
+      <li>Select a Google Cast receiver and use Cast. For AirPlay, use the app's native AirPlay player and Apple's route picker.</li>
+    </ol>
+    <div class="card"><p>CastDeck lists Google Cast, AirPlay and DLNA/UPnP receivers, CoreAudio outputs, and paired Bluetooth devices. Playback capabilities depend on the selected receiver. You can select compatible Google Cast devices for a synchronized session, or combine compatible system audio outputs.</p></div>
+    <h2 id="help">Troubleshooting</h2>
+    <h3>No network devices appear</h3><p>Check that both devices are on the same network. Guest networks and client isolation can prevent discovery. Check Local Network permission in macOS System Settings and use Rescan.</p>
+    <h3>The receiver rejects a file</h3><p>The receiver must support the file's codecs and container. MP4 with H.264 video and AAC audio is a useful starting point for Google Cast devices. CastDeck does not transcode unsupported files or bypass DRM.</p>
+    <h3>AirPlay route selection</h3><p>Apple's route picker controls AirPlay selection. CastDeck uses that supported system interface rather than forcing a route.</p>
+    <h3>DLNA playback</h3><p>DLNA devices must expose an AVTransport service. Compatibility varies, and playback has not yet been verified on the available test renderer.</p>
+    <h3>App mirroring</h3><p>App mirroring needs a compatible Google Cast receiver and macOS Screen Recording permission. Streaming has a delay, video is used by default, and protected content may appear black. Whole-screen AirPlay mirroring is provided by macOS Control Center.</p>
+    <h2>Contact support</h2><p>Email <a href="mailto:isaiahdupree33@gmail.com?subject=CastDeck%20support">isaiahdupree33@gmail.com</a> with your macOS version, CastDeck version, receiver model, media format, and the error you saw. Do not send private media, passwords, or sensitive network details.</p>
+  </main>
+  <footer>© 2026 Isaiah Dupree · <a href="../">All apps</a> · <a href="./privacy/">CastDeck privacy policy</a></footer>
+</body>
+</html>
