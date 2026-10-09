@@ -21,12 +21,12 @@ footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Kawaii Coffee Timer &middot; Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated September 29, 2026. This policy covers the native Kawaii Coffee Timer app for iPhone.</p>
+  <p>Last updated October 9, 2026. This policy covers the native Kawaii Coffee Timer app for iPhone.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/">Support</a><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20privacy">Contact</a></div>
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
-  <div class="card"><p>Kawaii Coffee Timer offers a device-local café game without an account. Its brewing journal uses an email-based account and Supabase for authentication and synchronized data. The current release does not sell data, serve ads, track activity across other companies&rsquo; apps or websites, or use a third-party product-analytics or crash-reporting service.</p></div>
+  <div class="card"><p>Kawaii Coffee Timer offers a device-local café game without an account. Its brewing journal uses an email-based account and Supabase for authentication and synchronized data. iPhone versions with purchase measurement enabled use RevenueCat to validate and measure purchases and understand Apple Ads acquisition. The app does not sell data, display ads, or track activity across other companies&rsquo; apps or websites.</p></div>
 
   <h2>Information stored on your device</h2>
   <p>The app keeps limited settings on the device so the experience works between launches. This can include:</p>
@@ -54,13 +54,14 @@ footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 
   <p>The app requests notification permission only when you enable the optional daily brew reminder in Settings. That reminder is scheduled locally; the app does not register a server-side push token or send marketing notifications. The current build does not request camera, photo-library, microphone, contacts, motion, health, or location permission.</p>
 
   <h2>Analytics, diagnostics, advertising, and tracking</h2>
-  <p>The release described by this policy does not include Sentry, RevenueCat, Superwall, PostHog, Google, Facebook, or advertising SDKs. It does not send product analytics or crash reports to those services. Supabase service logs are still retained for account security and app functionality as described above. The app does not request permission for cross-app tracking, sell personal information, or share personal information for targeted advertising. If a future release enables analytics, additional diagnostics or advertising, this policy and the App Store privacy disclosures will be updated before collection begins where required.</p>
+  <p>When purchase measurement is enabled in an iPhone release, <a href="https://www.revenuecat.com/privacy">RevenueCat</a> receives an anonymous app customer identifier, app and operating-system information, purchase records, and an Apple AdServices attribution token. RevenueCat uses the token to request Apple Ads attribution, including campaign, ad group, keyword and claim-type information when Apple provides it. We use these records to validate purchases, understand purchase and restore outcomes, and measure which Apple Ads campaigns lead to purchases.</p>
+  <p>This integration does not send your brewing-account identifier, email, journal, tasting notes or café game content to RevenueCat. It does not request the advertising identifier (IDFA), display ads, or request cross-app tracking permission. Supabase service logs remain separate and are used for account security and app functionality as described above. Versions with purchase measurement disabled do not send this RevenueCat measurement data.</p>
 
   <h2>Purchases</h2>
-  <p>The optional Café Style Pack is a one-time, non-consumable in-app purchase. Apple processes payments. StoreKit verifies purchase status on the device to unlock and restore four room themes and three extra café friends. The app does not transmit purchase receipts or transaction history to our servers or a third-party purchase-validation provider. We do not receive payment card details. There are no subscriptions or paid game-currency purchases. Restore Purchases is available in Café Studio. Local game progress is independent of your brewing account, and deleting that account does not revoke Apple purchases.</p>
+  <p>The optional Café Style Pack is a one-time, non-consumable in-app purchase. Apple processes payments. StoreKit verifies purchase status on the device to unlock and restore four room themes and three extra café friends. In measurement-enabled versions, verified purchase results and user-requested restores are also sent to RevenueCat. Apple can send purchase and refund notifications to RevenueCat so its purchase records stay current. We do not receive payment card details. There are no subscriptions or paid game-currency purchases. Restore Purchases is available in Café Studio. Local game progress is independent of your brewing account, and deleting that account does not revoke Apple purchases.</p>
 
   <h2>Why information is used</h2>
-  <p>Information is used only to provide requested app features, authenticate and secure accounts, preserve preferences and progress, respond to support or deletion requests, prevent abuse, and meet legal obligations. It is not used to build an advertising profile.</p>
+  <p>Information is used to provide requested app features, authenticate and secure accounts, preserve preferences and progress, validate and analyze purchases, measure Apple Ads acquisition, respond to support or deletion requests, prevent abuse, and meet legal obligations. It is not used to build a profile for targeting ads across other companies&rsquo; apps or websites.</p>
 
   <h2>Retention and deletion</h2>
   <p>Local reminder settings and cached app state remain until you disable the reminder, sign out where applicable, delete the app, or the operating system removes them, subject to Apple&rsquo;s backup behavior. Individual beans and brew sessions can be deleted from their corresponding app screens.</p>
@@ -69,7 +70,7 @@ footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 
   <p>If you cannot sign in or access the in-app deletion control, email <a href="mailto:isaiahdupree33@gmail.com?subject=Kawaii%20Coffee%20Timer%20account%20deletion">isaiahdupree33@gmail.com</a> from the account email with the subject <strong>Kawaii Coffee Timer account deletion</strong>. Ownership may be verified before processing this fallback request.</p>
 
   <h2>Service providers and disclosures</h2>
-  <p>Supabase processes account and synchronized app data on the publisher&rsquo;s behalf. Apple provides the App Store and operating-system services. Information may also be disclosed when required by law, to protect users or the service, or as part of a business transfer subject to applicable safeguards.</p>
+  <p>Supabase processes account and synchronized app data on the publisher&rsquo;s behalf. RevenueCat processes purchase and Apple Ads measurement records as described above. Apple provides the App Store and operating-system services. Deleting the app or your brewing account does not delete Apple purchase records or automatically erase RevenueCat transaction records; contact the privacy address below for a request concerning those records. Records may be retained for restoration, fraud prevention, financial recordkeeping and legal obligations. Information may also be disclosed when required by law, to protect users or the service, or as part of a business transfer subject to applicable safeguards.</p>
 
   <h2>Children</h2>
   <p>Kawaii Coffee Timer is a general-audience coffee app with a café minigame. It is not directed to children under 13, and the publisher does not knowingly collect personal information from a child under 13. A parent or guardian who believes a child supplied account information can contact the address below to request deletion.</p>
