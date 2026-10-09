@@ -1,6 +1,6 @@
 # Apple Ads privacy release candidate — October 9, 2026
 
-These are draft policies for the attribution source updates in [Meme Vault PR 1](https://github.com/IsaiahDupree/MemeVault/pull/1), [Kawaii Coffee Timer PR 1](https://github.com/IsaiahDupree/KawaiiCoffeeTimerNative/pull/1), and [Relay PR 1](https://github.com/IsaiahDupree/Relay/pull/1). No website deployment or App Store privacy publication is performed by this branch.
+These policies support the attribution source updates in [Meme Vault PR 1](https://github.com/IsaiahDupree/MemeVault/pull/1), [Kawaii Coffee Timer PR 1](https://github.com/IsaiahDupree/KawaiiCoffeeTimerNative/pull/1), and [Relay PR 1](https://github.com/IsaiahDupree/Relay/pull/1). Merging this branch publishes the pages through the existing GitHub Pages deployment. App Store privacy publication and app release are separate steps.
 
 The three integrations use RevenueCat's anonymous customer identity and Apple AdServices. They do not supply custom account IDs, emails, IDFA, or app content to this integration. The public copy describes purchase validation, acquisition analytics, provider retention, local-content boundaries and platform/version differences. Kawaii's existing Supabase account and diagnostic disclosures remain in place. Relay's previous claim of no retained data was inconsistent with its existing RevenueCat billing integration and is corrected.
 
