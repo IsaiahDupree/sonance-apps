@@ -26,17 +26,28 @@ footer{padding:26px 0 52px;border-top:1px solid var(--line);color:var(--muted);f
     <p><a href="../">Heartline Rush support</a></p>
     <p class="eyebrow">Signal Routes</p>
     <h1>Privacy Policy</h1>
-    <p class="lead">Last updated October 10, 2026. This policy describes the Signal Routes puzzle experience.</p>
+    <p class="lead">Last updated October 10, 2026. This policy describes Signal Routes, including the optional usage-sharing feature being prepared for build 6. Build 5 does not include usage sharing.</p>
   </header>
   <main class="policy">
     <section>
       <h2>Playing the game</h2>
-      <p>No account is required. The puzzles work offline, and you do not need to provide a name, email address, or theme prompt to play. The Signal Routes app does not send gameplay or personal information to the developer or a third-party service. It includes no analytics, advertising, tracking, or in-app purchases.</p>
+      <p>No account is required. The puzzles work offline, and you do not need to provide a name, email address, or theme prompt to play. Build 5 does not send gameplay or personal information to the developer or a third-party service and includes no analytics, advertising, tracking, or in-app purchases. In build 6, usage sharing is off by default and can be enabled or disabled in Privacy &amp; usage. The puzzles remain available when sharing is off. This policy does not announce that build 6 has been released.</p>
     </section>
     <section>
       <h2>Information stored on your device</h2>
-      <p>Heartline Rush saves your best star count for each completed mission in local app storage. These records determine which missions are unlocked when you reopen the game. Unfinished routes are not saved across app launches. The replacement puzzle does not request or record a player name, typed theme phrase, relationship selections, or the previous game's playtest counters.</p>
+      <p>Heartline Rush saves your best star count for each completed mission in local app storage. These records determine which missions are unlocked when you reopen the game. Build 5 does not save unfinished routes across launches. Build 6 also saves the unfinished board, selected circuit, attempt identifier, active play time, hint count, and aggregate invalid-move counts locally so you can resume; these local records are not themselves a request to share usage. The replacement puzzle does not request or record a player name, typed theme phrase, relationship selections, or the previous game's playtest counters.</p>
       <p>If you installed an earlier arcade version, local settings and progress from that version may remain on your device. Those older values can include a player name, theme phrase, character and relationship selections, scores, tutorial state, and aggregate playtest counters. This policy does not imply that updating the app deletes those existing local values.</p>
+    </section>
+    <section>
+      <h2>Optional usage sharing in build 6</h2>
+      <p>If you turn on Share gameplay usage, Heartline Rush sends a limited set of events to PostHog in the United States to help improve the game: first consent, gameplay sessions, mission starts and completions, explicit mission exits, tutorial completion, and hint requests. Events include app and catalog versions, event time, a random app-installation reference, session and attempt identifiers, mission number, input method, active play duration, steps, stars, hint count, and aggregate invalid-move counts. The reference links sessions from this installation; it is not a name or account and is not shared with our other apps.</p>
+      <p>We do not send your name, email address, advertising identifier, contacts, board paths, screenshots, or screen recordings. We do not collect every tile tap as an event. The app does not fingerprint your device or use these events for cross-company advertising tracking. Your network address necessarily reaches the provider when an HTTPS request is made; event capture requests disable IP-based geolocation and replace the event's IP field with an unspecified address so the actual address is not stored in gameplay events. PostHog's handling of network requests is also covered by its <a href="https://posthog.com/privacy">privacy policy</a>.</p>
+      <p>Sharing applies to new mission attempts. Activity from an attempt started before you opted in is not uploaded later. Turning sharing off stops collection, cancels pending uploads where possible, and discards unsent events. A request already received cannot be recalled by switching off. Gameplay and saved progress continue to work offline.</p>
+    </section>
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>The app keeps at most 200 unsent events and retries delivery when the app is used. Events more than seven days old are discarded when the app next opens or processes its queue; they are not sent. Received records remain in PostHog for product analysis until deleted on request or during maintenance, subject to the provider's storage policies; a reporting retention window is not a promise of automatic deletion. We do not represent that turning sharing off erases records already received.</p>
+      <p>To request access or deletion of received gameplay records, email <a href="mailto:isaiahdupree33@gmail.com?subject=Heartline%20Rush%20Data%20Request">isaiahdupree33@gmail.com</a> and include the deletion reference shown in Privacy &amp; usage. Keep that reference before uninstalling, since we cannot locate your pseudonymous records using your name alone. Removing the app may erase local progress, preferences, and the reference; operating-system backups may retain or restore app data.</p>
     </section>
     <section>
       <h2>Contacting support</h2>
