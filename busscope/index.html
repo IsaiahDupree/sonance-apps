@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BusScope support: inspect USB and Thunderbolt topology, reported link speeds, and local connection history on your Mac.">
+  <title>BusScope — Support</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#111318;--panel:#1b1e26;--ink:#f4f5f7;--muted:#b9bdc7;--line:#373b46;--accent:#62d7f1}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main,footer{width:min(850px,calc(100% - 40px));margin-inline:auto}header{padding:70px 0 34px;border-bottom:1px solid var(--line)}main{padding:34px 0}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(42px,8vw,72px);line-height:1;margin:12px 0 18px;letter-spacing:-.05em}.lead{max-width:64ch;color:var(--muted);font-size:20px}.card{padding:28px;margin:18px 0;background:var(--panel);border:1px solid var(--line);border-radius:18px}h2{margin:0 0 12px;font-size:24px}p{margin:0 0 14px}p:last-child{margin-bottom:0}a{color:var(--accent);text-underline-offset:4px}footer{padding:24px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    @media(prefers-color-scheme:light){:root{--bg:#f5f6f8;--panel:#fff;--ink:#17191e;--muted:#555b67;--line:#d9dce3}}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">BusScope · Mac</p>
+    <h1>Understand every connection.</h1>
+    <p class="lead">Inspect the USB and Thunderbolt device trees reported by macOS, compare negotiated speeds, and review a local attach/detach timeline.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Using BusScope</h2>
+      <p>Choose Refresh to read the USB and Thunderbolt reports from macOS. Search, filter, or sort the returned devices, then select a device to inspect its reported bus, speed, topology, vendor, and serial number. The details depend on what the device and macOS expose.</p>
+      <p>Connection history compares successful refreshes and is kept locally on this Mac. It is not a live hardware event feed; refresh BusScope after connecting or disconnecting a device.</p>
+      <p>Optional diagnostics export contains aggregate device and history counts, selected filters, refresh success, and local feature-use counts. It omits device names, serial numbers, and topology paths. Review the file before choosing to share it.</p>
+    </section>
+    <section class="card">
+      <h2>Contact support</h2>
+      <p>Email <a href="mailto:isaiahdupree33@gmail.com?subject=BusScope%20Support">isaiahdupree33@gmail.com</a> with your macOS version, Mac model, dock or hub model, the steps you took, and what you expected to see. You can attach a diagnostics export if you review it first.</p>
+      <p><a href="privacy/">Read the BusScope privacy policy</a></p>
+    </section>
+  </main>
+  <footer>© 2026 Isaiah Dupree.</footer>
+</body>
+</html>
