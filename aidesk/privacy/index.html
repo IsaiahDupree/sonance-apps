@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Deskcrew</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20212a;background:#fafbfc}header{background:linear-gradient(145deg,#6366f1,#161436);color:#fff;padding:56px 24px}main,footer{max-width:780px;margin:auto;padding:28px 24px}header div{max-width:780px;margin:auto}h1{font-size:40px;line-height:1.1;margin:0 0 12px}h2{font-size:23px;margin:32px 0 8px}a{color:#3730a3}li{margin:8px 0}footer{color:#666;border-top:1px solid #e5e7eb}header a{color:#fff}
+</style></head><body>
+<header><div><p>Deskcrew for Mac</p><h1>Privacy Policy</h1><p>Last updated October 22, 2026</p></div></header>
+<main>
+<p>Deskcrew stores chat history and selected images on your Mac. It does not require an account and does not use advertising or cross-app tracking. Some information leaves your Mac when you use AI features or a subscription.</p>
+<h2>Chat and attachments</h2>
+<p>When you send a message, Deskcrew sends the conversation context needed for that request, along with any image or extracted document text you chose to attach, to Deskcrew's service at <code>aidesk-proxy.vercel.app</code>. The service forwards the request to xAI to generate a response and streams the response back. Do not send information you do not want processed by these services. xAI's <a href="https://docs.x.ai/developers/faq/security">API security documentation</a> says API inputs and outputs are stored for 30 days by default for abuse review, are not used to train models without explicit permission, and can have different retention if the account's Zero Data Retention setting is enabled. Deskcrew does not choose a regional xAI endpoint, so processing location is not restricted by this app. See also xAI's <a href="https://x.ai/legal/privacy-policy">privacy policy</a>; xAI notes that its consumer policy does not cover API use.</p>
+<p>Deskcrew's proxy checks the request and subscription entitlement and records aggregate monthly request and token usage. The usage record contains a random per-install identifier, month, token counts, estimated service cost, request count, and update time. The proxy's usage database is hosted by Supabase. The proxy code does not write chat messages or attachments to that usage table. Vercel hosts the proxy. These providers may process technical request data under their own terms and operational logging practices. See <a href="https://supabase.com/privacy">Supabase's privacy notice</a> and <a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>.</p>
+<h2>Subscription validation</h2>
+<p>Deskcrew creates a random installation identifier and uses it as the StoreKit <code>appAccountToken</code> and as the proxy's monthly metering key. It is not your name or email, and Deskcrew does not require a separate account. The proxy receives the signed StoreKit transaction needed to validate subscription access. Apple processes purchases under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
+<h2>Local data and permissions</h2>
+<p>Chat text, conversation titles, saved memories, and image attachments are stored in Deskcrew's local application data on your Mac. Voice transcription uses macOS speech and microphone capabilities after you grant permission; the recognized text is used in the chat you submit. You can delete conversations and memories within the app. Removing the app may not remove files you exported or other system-managed purchase records.</p>
+<h2>Retention and requests</h2>
+<p>Local chat data remains until you delete it or remove the app's local data. Monthly aggregate metering is retained in the service database; the current implementation does not provide an in-app deletion control for those records. For a privacy request, contact <a href="mailto:isaiahdupree33@gmail.com?subject=Deskcrew%20privacy%20request">isaiahdupree33@gmail.com</a> and include “Deskcrew privacy request.”</p>
+<h2>Children</h2>
+<p>Deskcrew is not directed to children under 13 and is not intended for their use.</p>
+<h2>Changes and contact</h2>
+<p>This policy may be updated when Deskcrew's data practices change. Questions can be sent to <a href="mailto:isaiahdupree33@gmail.com">isaiahdupree33@gmail.com</a>.</p>
+</main><footer>© 2026 Isaiah Dupree · <a href="https://isaiahdupree.github.io/sonance-apps/aidesk/">Deskcrew support</a> · <a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a></footer>
+</body></html>
