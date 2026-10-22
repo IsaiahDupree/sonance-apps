@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SceneKeeper support for saving and applying local groups of Mac apps.">
+  <title>SceneKeeper — Support</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#111318;--panel:#1b1e26;--ink:#f4f5f7;--muted:#b9bdc7;--line:#373b46;--accent:#87dfc0}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main,footer{width:min(850px,calc(100% - 40px));margin-inline:auto}header{padding:64px 0 32px;border-bottom:1px solid var(--line)}main{padding:32px 0}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(40px,8vw,68px);line-height:1.02;margin:12px 0;letter-spacing:-.05em}.lead{max-width:62ch;color:var(--muted);font-size:20px}.card{padding:26px;margin:18px 0;background:var(--panel);border:1px solid var(--line);border-radius:18px}h2{margin:0 0 10px;font-size:23px}p,li{margin:0 0 12px}ul{padding-left:22px;margin:8px 0}a{color:var(--accent);text-underline-offset:4px}footer{padding:22px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    @media(prefers-color-scheme:light){:root{--bg:#f5f6f8;--panel:#fff;--ink:#17191e;--muted:#555b67;--line:#d9dce3}}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">SceneKeeper · Mac</p>
+    <h1>Return to your app setup.</h1>
+    <p class="lead">Save a group of Mac apps as a scene, then choose whether apps outside it stay open, hide, or quit after confirmation.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Create and apply a scene</h2>
+      <ul>
+        <li>Create a named scene and choose installed apps with the macOS file picker.</li>
+        <li>Select Leave, Hide, or Quit for apps outside the scene.</li>
+        <li>Choose Apply Scene to launch selected apps that are not running and apply the outside-app choice.</li>
+        <li>Every Quit action requires a fresh confirmation because unsaved work in other apps could be lost.</li>
+      </ul>
+      <p>SceneKeeper protects Finder, Dock, SystemUIServer, and itself from hide and quit actions. It saves scene definitions and interrupted new-scene drafts locally. It does not restore window positions.</p>
+    </section>
+    <section class="card">
+      <h2>Common questions</h2>
+      <p><strong>An app is missing from a scene.</strong> Open Edit Scene and choose the app again from its current location. A moved or removed app may need to be selected again.</p>
+      <p><strong>An outside app stayed open.</strong> Check that the scene uses Hide or Quit. Some apps may refuse a close or hide request; SceneKeeper does not force-terminate protected system apps.</p>
+      <p><strong>Can I undo Quit?</strong> Quit may discard unsaved work if the other app has no save prompt. Review the confirmation carefully. SceneKeeper asks again every time.</p>
+      <p><strong>Where are scenes saved?</strong> Scene definitions and interrupted new-scene drafts are stored locally on this Mac. Optional diagnostics export contains counts and filter state, not scene names or app paths.</p>
+    </section>
+    <section class="card">
+      <h2>Contact support</h2>
+      <p>Email <a href="mailto:isaiahdupree33@gmail.com?subject=SceneKeeper%20Support">isaiahdupree33@gmail.com</a> with your macOS version, the steps you took, and what you expected to happen. Review any diagnostics file before you choose to share it.</p>
+      <p><a href="privacy/">Read the SceneKeeper privacy policy</a></p>
+    </section>
+  </main>
+  <footer>© 2026 Isaiah Dupree.</footer>
+</body>
+</html>
