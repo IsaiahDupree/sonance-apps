@@ -51,14 +51,14 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
 <div class="hero"><div class="wrap">
   <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated October 9, 2026. This policy covers the apps listed here, including FloatPlayer, CloseCircle, and vrdesk web.</p>
+  <p>Last updated November 5, 2026. This policy covers the apps listed here, including FloatPlayer, CloseCircle, and vrdesk web.</p>
   <div class="nav"><a href="https://isaiahdupree.github.io/sonance-apps/">All apps</a><a href="mailto:isaiahdupree33@gmail.com">Contact</a></div>
 </div></div>
 <main><div class="wrap">
   <h2>The short version</h2>
   <p><a href="https://isaiahdupree.github.io/sonance-apps/aidesk/privacy/">Deskcrew</a>, Meme Vault, <a href="https://isaiahdupree.github.io/sonance-apps/kawaii-coffee-timer/privacy/">Kawaii Coffee Timer</a>, and <a href="https://isaiahdupree.github.io/sonance-apps/relay/privacy/">Relay</a> have app-specific policies. Read each policy for that app's data practices, purchase handling, and optional measurement features.</p>
   <div class="card"><p>Most apps on this site work entirely on your Mac and do not collect, store, or transmit
-  your personal content. FloatPlayer, CloseCircle, and DevForge send limited, content-free product analytics described below.
+  your personal content. Sonance products, FloatPlayer, CloseCircle, and DevForge have limited, content-free product analytics described below.
   vrdesk is the connected exception described in full below: its native media stays on your
   local network, its web media is peer-to-peer, and the web edition sends only connection-setup messages through
   Supabase. These apps do not use advertising or behavioral tracking.</p></div>
@@ -88,8 +88,17 @@ footer{border-top:1px solid #eceef2;color:#8a8c94;font-size:14px;padding:28px 0 
   your payment details; Apple handles all payment information. See also
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
-  <h2>Data we collect</h2>
-  <div class="card"><p><strong>None for the Mac utilities above except DevForge.</strong> We do not operate servers that receive your content. DevForge sends a random installation identifier and content-free product interaction, foreground-active time, bounded error, and purchase outcome events to Supabase for analytics; its full disclosure is available in the <a href="../forge/privacy/">DevForge Privacy Policy</a>. CloseCircle sends a random installation identifier plus content-free screen, active-time, and completed-workflow events to Supabase; its full disclosure is available in the <a href="../closecircle/privacy/">CloseCircle Privacy Policy</a>. No app uses this data for advertising or cross-app tracking. Apps that are still in evaluation run their purchase flow locally with no
+  <h2 id="sonance-analytics">Sonance feature use and feedback</h2>
+  <div class="card">
+    <p>This section covers Sonance EQ, Mixer, Recorder, Voice, Diagram Studio, Scribe, Align, and Preflight. Their feature analytics do not include audio, transcripts, diagram source, room geometry or measurements, filenames, device names, other apps' identities, or search text. Diagram Studio's separately configured rendering services may receive diagram content to render it; this is separate from feature analytics.</p>
+    <p>Updates with <strong>Feedback &amp; Analytics</strong> provide an optional <strong>Share anonymous feature use</strong> setting, off until you enable it. When enabled, the app sends predefined feature identifiers, action outcomes or bounded failure reasons, timestamps, app/build version, platform, event/session IDs, and a random identifier for that app installation to our shared Supabase project. The identifier is not shared across apps. We use these observations to understand feature use, reliability, and setup problems.</p>
+    <p>You can separately submit a fixed-choice feature and experience—for example, that it saves time, an option is missing, or permissions are blocking you. Pressing Submit sends that feedback and app/build details. With ongoing sharing off, each feedback response uses a fresh identifier. We do not infer everyone's motives from these voluntary responses.</p>
+    <p>Turning sharing off stops the updated collector, cancels its requests, and removes unsent observations and the local analytics identifier. A request already received cannot be recalled. Earlier released versions of Mixer, Recorder, Voice, and Diagram Studio send their previously implemented, content-free lifecycle, screen, active-time, action, bounded-error, and purchase-workflow events; the new controls apply after installing the update. EQ's separate campaign/purchase journey measurement requires its own explicit consent when configured.</p>
+    <p>Sonance raw product events are retained for at most <strong>13 months</strong>, with daily expiry. App clients can insert events but cannot read other events or private reports. This data is not used for advertising, cross-app tracking, session replay, or sale to data brokers. Apple and purchase providers process purchase information as described above. For questions or data requests, contact <a href="mailto:isaiahdupree33@gmail.com?subject=Sonance%20privacy">isaiahdupree33@gmail.com</a>.</p>
+  </div>
+
+  <h2>Other data we collect</h2>
+  <div class="card"><p><strong>Some apps send limited product analytics.</strong> We do not receive the working content described above through product analytics. DevForge sends a random installation identifier and content-free product interaction, foreground-active time, bounded error, and purchase outcome events to Supabase for analytics; its full disclosure is available in the <a href="../forge/privacy/">DevForge Privacy Policy</a>. CloseCircle sends a random installation identifier plus content-free screen, active-time, and completed-workflow events to Supabase; its full disclosure is available in the <a href="../closecircle/privacy/">CloseCircle Privacy Policy</a>. No app uses this data for advertising or cross-app tracking. Apps that are still in evaluation run their purchase flow locally with no
   network activity at all. FloatPlayer sends a random installation identifier plus content-free screen, foreground-active time, video-source category, playback, Picture in Picture, import, and bookmark outcome events to Supabase; its full disclosure is available in the <a href="../floatplayer/privacy/">FloatPlayer Privacy Policy</a>. <strong>vrdesk</strong> is the other connected app in this collection — its current iOS release offers
   an optional subscription without requiring an account, and its web edition uses cloud signaling; exactly what those
   services handle, and what they never touch, is described in
