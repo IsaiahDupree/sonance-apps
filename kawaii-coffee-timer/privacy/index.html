@@ -28,6 +28,11 @@ footer{border-top:1px solid #f0e3e7;color:#8c7a81;font-size:14px;padding:28px 0 
   <h2>The short version</h2>
   <div class="card"><p>Kawaii Coffee Timer offers a device-local café game without an account. Its brewing journal uses an email-based account and Supabase for authentication and synchronized data. iPhone versions with purchase measurement enabled use RevenueCat to validate and measure purchases and understand Apple Ads acquisition. The app does not sell data, display ads, or track activity across other companies&rsquo; apps or websites.</p></div>
 
+  <h2>iPhone and Apple Watch companion release 1.1</h2>
+  <p>The 1.1 Watch companion release retains the earlier iPhone interface. In this release you can use guest mode without cloud synchronization. If you sign in, Supabase receives your email, account identifier, optional display name and profile photograph, preferences, and brew-session records including ratings, notes, quantities and timestamps. An optional profile photograph is uploaded only when you select one in the profile editor, after the system photo permission. Supabase account-security and diagnostic logging described below also applies.</p>
+  <p>The paired Watch companion exchanges timer and brew snapshots with your iPhone using Apple WatchConnectivity. Its local journal and pairing identifiers stay on the paired devices. Recording, microphone, HealthKit and GPS access are not part of this companion. Caffeine entries remain local; the cloud brew-session upload does not include a caffeine field.</p>
+  <p>Release 1.1 has no configured RevenueCat purchase key, PostHog analytics key or Sentry diagnostic endpoint. Its Facebook automatic initialization, automatic event logging and advertising identifier collection are disabled. It does not send the purchase-measurement data described for other iPhone releases below. Purchases that are unavailable in this release are shown as unavailable.</p>
+
   <h2>Information stored on your device</h2>
   <p>The app keeps limited settings on the device so the experience works between launches. This can include:</p>
   <ul>
