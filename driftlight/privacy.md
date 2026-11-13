@@ -8,7 +8,7 @@ Driftlight stores your saved looks, preferences, and imported media on your devi
 
 ## App analytics
 
-Driftlight sends limited product analytics to a database hosted by Supabase on our behalf. The app can send a randomly generated installation identifier, app and OS information, foreground session or feature activity, export and save outcomes, and purchase or restore information. We use these events to find failures and improve the app. We do not use them for advertising or tracking across apps. Events do not contain your wallpaper images, video or photo library, filenames, file paths, saved-look names, or the contents of anything you make. Optional on-device activity records are separate. You can manage and clear them in the app.
+Driftlight for iPhone sends limited product analytics to a database hosted by Supabase on our behalf. The app can send a randomly generated installation identifier, app and OS information, foreground session or feature activity, export and save outcomes, and purchase or restore information. We use these events to find failures and improve the app. We do not use them for advertising or tracking across apps. Events do not contain your wallpaper images, video or photo library, filenames, file paths, saved-look names, or the contents of anything you make. The Mac app keeps optional activity records on your Mac. You can manage and clear those records in the app.
 
 ## Purchases and support
 
